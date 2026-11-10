@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+
+<html lang="id"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "inverse-surface": "#2c322e",
+          "on-primary-fixed-variant": "#005313",
+          "surface-dim": "#d6dcd5",
+          "outline-variant": "#becab9",
+          "on-primary-container": "#003c0b",
+          "tertiary": "#1b6d24",
+          "on-secondary-fixed-variant": "#3e4a41",
+          "on-background": "#171d19",
+          "text-secondary": "#68706B",
+          "surface-container-lowest": "#ffffff",
+          "primary-container": "#4caf50",
+          "surface-container": "#eaefe9",
+          "text-on-dark": "#F4F6F4",
+          "error": "#DC2626",
+          "on-secondary": "#ffffff",
+          "primary": "#006e1c",
+          "primary-fixed-dim": "#78dc77",
+          "secondary": "#556158",
+          "surface-bright": "#f5fbf4",
+          "on-surface": "#171d19",
+          "outline": "#6f7a6b",
+          "tertiary-fixed-dim": "#88d982",
+          "on-tertiary": "#ffffff",
+          "surface-dark": "#141815",
+          "on-primary": "#ffffff",
+          "on-surface-variant": "#3f4a3c",
+          "text-primary": "#1E2420",
+          "inverse-on-surface": "#ecf2ec",
+          "on-error-container": "#93000a",
+          "primary-fixed": "#94f990",
+          "on-secondary-fixed": "#131e17",
+          "surface-container-highest": "#dee4dd",
+          "on-tertiary-container": "#003c0a",
+          "on-tertiary-fixed": "#002204",
+          "surface-variant": "#dee4dd",
+          "surface": "#F4F6F4",
+          "border": "#DCE2DD",
+          "on-primary-fixed": "#002204",
+          "secondary-container": "#d9e6da",
+          "surface-tint": "#006e1c",
+          "secondary-fixed": "#d9e6da",
+          "on-secondary-container": "#5b675e",
+          "background": "#FFFFFF",
+          "on-tertiary-fixed-variant": "#005312",
+          "warning": "#D97706",
+          "inverse-primary": "#78dc77",
+          "surface-card": "#FFFFFF",
+          "tertiary-container": "#5dac5b",
+          "on-error": "#ffffff",
+          "secondary-fixed-dim": "#bdcabe",
+          "error-container": "#ffdad6",
+          "tertiary-fixed": "#a3f69c",
+          "surface-container-high": "#e4eae3",
+          "primary-hover": "#3D9140",
+          "surface-container-low": "#eff5ee"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.25rem",
+          "lg": "0.5rem",
+          "xl": "0.75rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "space-xl": "2rem",
+          "gutter": "1.5rem",
+          "space-lg": "1.5rem",
+          "2xl": "48px",
+          "xl": "32px",
+          "xs": "4px",
+          "3xl": "64px",
+          "lg": "24px",
+          "gutter-sm": "1rem",
+          "margin-sm": "1rem",
+          "space-sm": "0.5rem",
+          "margin": "2rem",
+          "sm": "8px",
+          "space-md": "1rem",
+          "space-3xl": "4rem",
+          "space-2xl": "3rem",
+          "space-xs": "0.25rem",
+          "md": "16px"
+        },
+        "fontFamily": {
+          "label-sm": [
+            "\"Plus Jakarta Sans, Inter, sans-serif\""
+          ],
+          "headline-sm": [
+            "Playfair Display"
+          ],
+          "headline-xl": [
+            "Playfair Display"
+          ],
+          "h2": [
+            "\"Playfair Display, Georgia, serif\""
+          ],
+          "label-md": [
+            "Plus Jakarta Sans"
+          ],
+          "h3": [
+            "\"Playfair Display, Georgia, serif\""
+          ],
+          "headline-md": [
+            "Playfair Display"
+          ],
+          "body-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "h1": [
+            "\"Playfair Display, Georgia, serif\""
+          ],
+          "body-md": [
+            "\"Plus Jakarta Sans, Inter, sans-serif\""
+          ],
+          "headline-lg": [
+            "Playfair Display"
+          ],
+          "label-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "body-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-xl-mobile": [
+            "Playfair Display"
+          ]
+        },
+        "fontSize": {
+          "label-sm": [
+            "0.75rem",
+            {
+              "lineHeight": "1.4",
+              "fontWeight": "500"
+            }
+          ],
+          "headline-sm": [
+            "18px",
+            {
+              "lineHeight": "24px",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-xl": [
+            "44px",
+            {
+              "lineHeight": "51px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "700"
+            }
+          ],
+          "h2": [
+            "2rem",
+            {
+              "lineHeight": "1.2",
+              "fontWeight": "600"
+            }
+          ],
+          "label-md": [
+            "13px",
+            {
+              "lineHeight": "18px",
+              "fontWeight": "500"
+            }
+          ],
+          "h3": [
+            "1.25rem",
+            {
+              "lineHeight": "1.35",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-md": [
+            "20px",
+            {
+              "lineHeight": "27px",
+              "fontWeight": "600"
+            }
+          ],
+          "body-lg": [
+            "17px",
+            {
+              "lineHeight": "28px",
+              "fontWeight": "400"
+            }
+          ],
+          "h1": [
+            "2.75rem",
+            {
+              "lineHeight": "1.15",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "700"
+            }
+          ],
+          "body-md": [
+            "0.9375rem",
+            {
+              "lineHeight": "1.6",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-lg": [
+            "32px",
+            {
+              "lineHeight": "38px",
+              "fontWeight": "600"
+            }
+          ],
+          "label-lg": [
+            "14px",
+            {
+              "lineHeight": "20px",
+              "fontWeight": "600"
+            }
+          ],
+          "body-sm": [
+            "13px",
+            {
+              "lineHeight": "20px",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-xl-mobile": [
+            "32px",
+            {
+              "lineHeight": "38px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "700"
+            }
+          ]
+        }
+      },
+    },
+  }</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between gap-4"><div class="flex items-center gap-3 shrink-0"><div class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center text-on-primary-container shadow-sm"><span class="material-symbols-outlined text-[24px]">account_balance</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface leading-tight tracking-tight">Desa Gendingan</span><span class="font-label-sm text-label-sm text-on-surface-variant">Kab. Tulungagung</span></div></div><nav class="hidden xl:flex items-center gap-1 bg-surface-container-low px-2 py-1.5 rounded-full border border-border" data-active-classes="bg-secondary-container text-on-secondary-container font-semibold rounded-full"><a class="px-3 py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="beranda" href="#">Beranda</a><div class="relative group"><button class="flex items-center gap-1 px-3 py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" type="button">Profil<span class="material-symbols-outlined text-[16px]">expand_more</span></button><div class="absolute top-full left-0 mt-2 hidden group-hover:block bg-surface-card rounded-xl shadow-lg border border-border py-2 min-w-[180px] z-50"><a class="block px-4 py-2 font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface" data-path="profil-desa" href="#">Tentang Desa</a><a class="block px-4 py-2 font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface" data-path="visi-misi" href="#">Visi &amp; Misi</a><a class="block px-4 py-2 font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface" data-path="sejarah-desa" href="#">Sejarah</a></div></div><a class="px-3 py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="pemerintahan" href="#">Pemerintahan</a><a class="px-3 py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="data-dan-transparansi" href="#">Data &amp; Transparansi</a><a class="px-3 py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="layanan-desa" href="#">Layanan</a><a class="px-3 py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="potensi-desa" href="#">Potensi</a><a class="px-3 py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="berita-dan-agenda" href="#">Berita</a><a class="px-3 py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="kontak-dan-lokasi" href="#">Kontak</a></nav><div class="flex items-center gap-3 shrink-0"><div class="relative hidden sm:flex items-center"><span class="material-symbols-outlined absolute left-3.5 text-on-surface-variant text-[18px]">search</span><input class="w-48 lg:w-56 pl-9 pr-4 py-2 rounded-full bg-surface-card border border-border text-on-surface placeholder:text-text-secondary font-label-md text-label-md focus:outline-none focus:border-primary-container focus:ring-1 focus:ring-primary-container transition-all" placeholder="Cari informasi publik..." type="text"/></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shadow-sm"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-surface min-h-[calc(100vh-20rem)]"><div class="flex flex-col w-full">
+<!-- Interactive Navigation Synchronizer -->
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const navLinks = document.querySelectorAll('header nav a[data-path="data-dan-transparansi"]');
+      navLinks.forEach(link => {
+        link.classList.remove('text-on-surface-variant');
+        link.classList.add('bg-secondary-container', 'text-on-secondary-container', 'font-semibold', 'shadow-sm');
+      });
+    });
+  </script>
+<!-- Section 1: Hero Header & Pill Sub-Navigation -->
+<section class="max-w-7xl mx-auto px-6 lg:px-12 w-full pt-8 pb-10">
+<div class="relative overflow-hidden rounded-3xl bg-surface-dark text-text-on-dark p-8 md:p-12 lg:p-16 shadow-xl">
+<!-- Ambient green glow in background -->
+<div class="absolute -right-24 -top-24 w-96 h-96 bg-primary-container/20 rounded-full blur-3xl pointer-events-none"></div>
+<div class="absolute left-1/3 -bottom-20 w-80 h-80 bg-primary/20 rounded-full blur-2xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col items-start max-w-3xl">
+<!-- Breadcrumb Pill -->
+<nav class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 backdrop-blur-md text-surface-container-high font-label-sm text-label-sm mb-6">
+<span>Beranda</span>
+<span class="material-symbols-outlined text-[14px] text-primary-fixed">chevron_right</span>
+<span>Data &amp; Transparansi</span>
+<span class="material-symbols-outlined text-[14px] text-primary-fixed">chevron_right</span>
+<span class="text-primary-fixed font-medium">Data &amp; Statistik Desa</span>
+</nav>
+<!-- Main Title & Description -->
+<h1 class="font-h1 text-h1 text-surface-container-lowest tracking-tight mb-4">
+          Data &amp; Statistik Kependudukan
+        </h1>
+<p class="font-body-lg text-body-lg text-outline-variant leading-relaxed mb-6">
+          Transparansi data demografi, kependudukan, tingkat pendidikan, mata pencaharian, dan status indeks pembangunan Desa Gendingan terkini yang diperbarui secara berkesinambungan.
+        </p>
+<!-- Live Sync Pill -->
+<div class="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-primary-container/20 border border-primary-container/40 text-primary-fixed font-label-md text-label-md">
+<span class="w-2.5 h-2.5 rounded-full bg-primary-container animate-pulse"></span>
+<span>Sistem Informasi Desa (SID) Terpadu • Pembaruan Terakhir: Oktober 2026</span>
+</div>
+</div>
+</div>
+<!-- Floating Pill Sub-Navigation -->
+<div class="mt-8 flex justify-center w-full">
+<div class="inline-flex flex-wrap items-center justify-center gap-1.5 p-2 rounded-full bg-surface-card shadow-md border border-border max-w-full overflow-x-auto">
+<a class="flex items-center gap-2 px-5 py-2.5 rounded-full bg-primary-container text-on-primary-container font-label-md text-label-md transition-all shadow-sm" href="#demografi">
+<span class="material-symbols-outlined text-[18px]">group</span>
+<span>Ringkasan Demografi</span>
+</a>
+<a class="flex items-center gap-2 px-5 py-2.5 rounded-full bg-transparent hover:bg-surface-container text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-all" href="#kelompok-usia">
+<span class="material-symbols-outlined text-[18px]">how_to_reg</span>
+<span>Kelompok Usia</span>
+</a>
+<a class="flex items-center gap-2 px-5 py-2.5 rounded-full bg-transparent hover:bg-surface-container text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-all" href="#pendidikan-pekerjaan">
+<span class="material-symbols-outlined text-[18px]">school</span>
+<span>Pendidikan &amp; Pekerjaan</span>
+</a>
+<a class="flex items-center gap-2 px-5 py-2.5 rounded-full bg-transparent hover:bg-surface-container text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-all" href="#sosial-wilayah">
+<span class="material-symbols-outlined text-[18px]">pie_chart</span>
+<span>Agama &amp; Wilayah</span>
+</a>
+<a class="flex items-center gap-2 px-5 py-2.5 rounded-full bg-transparent hover:bg-surface-container text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-all" href="#status-idm">
+<span class="material-symbols-outlined text-[18px]">workspace_premium</span>
+<span>Status IDM Mandiri</span>
+</a>
+</div>
+</div>
+</section>
+<!-- Section A: Ringkasan Metrik Utama Penduduk (4 KPI Cards) -->
+<section class="max-w-7xl mx-auto px-6 lg:px-12 w-full py-8" id="demografi">
+<div class="bg-surface rounded-3xl p-8 lg:p-12">
+<div class="text-center max-w-2xl mx-auto mb-10">
+<span class="inline-block px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm uppercase tracking-wider mb-2">Demografi Utama</span>
+<h2 class="font-h2 text-h2 text-on-surface mb-2">Ringkasan Data Kependudukan</h2>
+<p class="font-body-md text-body-md text-text-secondary">Rekapitulasi total jiwa, kepala keluarga, dan rasio gender per semester berjalan 2026</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Card 1: Total Penduduk -->
+<div class="bg-surface-card rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between mb-4">
+<div class="w-12 h-12 rounded-full bg-secondary-container text-on-primary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">groups</span>
+</div>
+<span class="inline-flex items-center px-2.5 py-1 rounded-full bg-secondary-container text-primary font-label-sm text-label-sm font-semibold">
+              +1,2% thn lalu
+            </span>
+</div>
+<span class="block font-label-md text-label-md text-text-secondary">Total Penduduk</span>
+<p class="font-h1 text-headline-lg text-text-primary tabular-nums mt-1 mb-2">6.420 <span class="font-body-md text-body-md text-text-secondary font-normal">Jiwa</span></p>
+<p class="font-body-sm text-body-sm text-text-secondary">Tercatat aktif dalam database SID</p>
+</div>
+<!-- Card 2: Kepala Keluarga -->
+<div class="bg-surface-card rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between mb-4">
+<div class="w-12 h-12 rounded-full bg-secondary-container text-on-primary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">roofing</span>
+</div>
+<span class="inline-flex items-center px-2.5 py-1 rounded-full bg-surface-container text-text-secondary font-label-sm text-label-sm">
+              4 Dusun
+            </span>
+</div>
+<span class="block font-label-md text-label-md text-text-secondary">Kepala Keluarga (KK)</span>
+<p class="font-h1 text-headline-lg text-text-primary tabular-nums mt-1 mb-2">1.980 <span class="font-body-md text-body-md text-text-secondary font-normal">KK</span></p>
+<p class="font-body-sm text-body-sm text-text-secondary">Tersebar di 19 RT dan 6 RW</p>
+</div>
+<!-- Card 3: Laki-Laki -->
+<div class="bg-surface-card rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between mb-4">
+<div class="w-12 h-12 rounded-full bg-secondary-container text-on-primary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">male</span>
+</div>
+<span class="inline-flex items-center px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm font-semibold tabular-nums">
+              50,39%
+            </span>
+</div>
+<span class="block font-label-md text-label-md text-text-secondary">Penduduk Laki-Laki</span>
+<p class="font-h1 text-headline-lg text-text-primary tabular-nums mt-1 mb-2">3.235 <span class="font-body-md text-body-md text-text-secondary font-normal">Jiwa</span></p>
+<p class="font-body-sm text-body-sm text-text-secondary">Rasio gender seimbang (101,5)</p>
+</div>
+<!-- Card 4: Perempuan -->
+<div class="bg-surface-card rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between mb-4">
+<div class="w-12 h-12 rounded-full bg-secondary-container text-on-primary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">female</span>
+</div>
+<span class="inline-flex items-center px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm font-semibold tabular-nums">
+              49,61%
+            </span>
+</div>
+<span class="block font-label-md text-label-md text-text-secondary">Penduduk Perempuan</span>
+<p class="font-h1 text-headline-lg text-text-primary tabular-nums mt-1 mb-2">3.185 <span class="font-body-md text-body-md text-text-secondary font-normal">Jiwa</span></p>
+<p class="font-body-sm text-body-sm text-text-secondary">Kelompok binaan PKK aktif</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Section B: Piramida Penduduk & Kelompok Usia (Asymmetric 12-col Bento) -->
+<section class="max-w-7xl mx-auto px-6 lg:px-12 w-full py-8" id="kelompok-usia">
+<div class="bg-surface rounded-3xl p-8 lg:p-12">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<!-- Left: Kelompok Usia (7 Cols) -->
+<div class="lg:col-span-7 bg-surface-card rounded-2xl p-7 lg:p-8 shadow-sm">
+<div class="flex items-start justify-between mb-6">
+<div>
+<h3 class="font-h3 text-h3 text-on-surface">Distribusi Kelompok Usia</h3>
+<p class="font-body-sm text-body-sm text-text-secondary mt-1">Perbandingan kelompok usia produktif dan non-produktif di Desa Gendingan</p>
+</div>
+<span class="hidden sm:inline-flex px-3 py-1 rounded-full bg-surface-container text-text-secondary font-label-sm text-label-sm">Tahun 2026</span>
+</div>
+<!-- Bar Visualization -->
+<div class="space-y-4">
+<!-- 0-4 Balita -->
+<div>
+<div class="flex justify-between items-center text-label-md font-label-md mb-1.5">
+<span class="text-text-primary">0–4 Tahun <span class="text-text-secondary font-normal">(Balita)</span></span>
+<span class="font-semibold text-text-primary tabular-nums">380 Jiwa <span class="text-text-secondary font-normal">(5,9%)</span></span>
+</div>
+<div class="w-full h-3 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-primary-fixed rounded-full" style="width: 5.9%;"></div>
+</div>
+</div>
+<!-- 5-14 Anak-anak -->
+<div>
+<div class="flex justify-between items-center text-label-md font-label-md mb-1.5">
+<span class="text-text-primary">5–14 Tahun <span class="text-text-secondary font-normal">(Anak-anak)</span></span>
+<span class="font-semibold text-text-primary tabular-nums">910 Jiwa <span class="text-text-secondary font-normal">(14,2%)</span></span>
+</div>
+<div class="w-full h-3 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-tertiary-fixed rounded-full" style="width: 14.2%;"></div>
+</div>
+</div>
+<!-- 15-24 Pemuda -->
+<div>
+<div class="flex justify-between items-center text-label-md font-label-md mb-1.5">
+<span class="text-text-primary">15–24 Tahun <span class="text-text-secondary font-normal">(Pemuda / Angkatan Baru)</span></span>
+<span class="font-semibold text-text-primary tabular-nums">1.120 Jiwa <span class="text-text-secondary font-normal">(17,4%)</span></span>
+</div>
+<div class="w-full h-3 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-tertiary-container rounded-full" style="width: 17.4%;"></div>
+</div>
+</div>
+<!-- 25-44 Dewasa Produktif -->
+<div class="bg-surface-container-low p-3 rounded-xl">
+<div class="flex justify-between items-center text-label-md font-label-md mb-1.5">
+<span class="text-on-surface font-semibold flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+                  25–44 Tahun <span class="text-primary font-medium">(Dewasa Produktif - Mayoritas)</span>
+</span>
+<span class="font-bold text-primary tabular-nums">1.980 Jiwa (30,8%)</span>
+</div>
+<div class="w-full h-3.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-primary-container rounded-full" style="width: 30.8%;"></div>
+</div>
+</div>
+<!-- 45-64 Pra-Lansia -->
+<div>
+<div class="flex justify-between items-center text-label-md font-label-md mb-1.5">
+<span class="text-text-primary">45–64 Tahun <span class="text-text-secondary font-normal">(Pra-Lansia)</span></span>
+<span class="font-semibold text-text-primary tabular-nums">1.420 Jiwa <span class="text-text-secondary font-normal">(22,1%)</span></span>
+</div>
+<div class="w-full h-3 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-tertiary-container/80 rounded-full" style="width: 22.1%;"></div>
+</div>
+</div>
+<!-- 65+ Lansia -->
+<div>
+<div class="flex justify-between items-center text-label-md font-label-md mb-1.5">
+<span class="text-text-primary">65+ Tahun <span class="text-text-secondary font-normal">(Lansia)</span></span>
+<span class="font-semibold text-text-primary tabular-nums">610 Jiwa <span class="text-text-secondary font-normal">(9,5%)</span></span>
+</div>
+<div class="w-full h-3 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-outline-variant rounded-full" style="width: 9.5%;"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Right: Rasio Ketergantungan (5 Cols) -->
+<div class="lg:col-span-5 flex flex-col gap-6">
+<div class="bg-surface-card rounded-2xl p-7 lg:p-8 shadow-sm flex flex-col justify-between">
+<div>
+<h3 class="font-h3 text-h3 text-on-surface">Rasio Ketergantungan</h3>
+<p class="font-body-sm text-body-sm text-text-secondary mt-1 mb-6">Analisis bonus demografi dan produktivitas warga</p>
+<div class="space-y-4">
+<div class="p-4 rounded-xl bg-surface-container-low">
+<div class="flex justify-between items-center mb-1">
+<span class="font-label-md text-label-md text-text-primary">Usia Produktif (15–64 Thn)</span>
+<span class="font-semibold text-primary font-label-lg text-label-lg tabular-nums">70,4%</span>
+</div>
+<p class="font-body-sm text-body-sm text-text-secondary mb-2 tabular-nums">4.520 Jiwa terdata potensial kerja</p>
+<div class="w-full h-2.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-primary-container rounded-full" style="width: 70.4%;"></div>
+</div>
+</div>
+<div class="p-4 rounded-xl bg-surface-container-low">
+<div class="flex justify-between items-center mb-1">
+<span class="font-label-md text-label-md text-text-primary">Usia Non-Produktif (&lt;15 &amp; ≥65 Thn)</span>
+<span class="font-semibold text-secondary font-label-lg text-label-lg tabular-nums">29,6%</span>
+</div>
+<p class="font-body-sm text-body-sm text-text-secondary mb-2 tabular-nums">1.900 Jiwa tanggungan keluarga</p>
+<div class="w-full h-2.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 29.6%;"></div>
+</div>
+</div>
+<div class="p-4 rounded-xl bg-surface-container-high flex items-center justify-between">
+<div>
+<span class="block font-label-md text-label-md text-on-surface">Angka Beban Ketergantungan</span>
+<span class="font-body-sm text-body-sm text-tertiary font-medium">Kategori: Sangat Rendah (Menguntungkan)</span>
+</div>
+<div class="text-right">
+<span class="font-h2 text-h2 text-primary tabular-nums">42,0%</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Highlight Insight Box -->
+<div class="mt-6 p-4 rounded-xl bg-secondary-container/60 border-l-4 border-primary text-on-surface">
+<div class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-primary text-[20px] shrink-0 mt-0.5">lightbulb</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+<strong>Catatan Analisis SID:</strong> Desa Gendingan berada pada jendela <em>Bonus Demografi</em> optimal dengan 70,4% angkatan kerja aktif, menjadi pendorong utama produktivitas pertanian pangan dan industri UMKM desa.
+                </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section C: Pendidikan & Pekerjaan (2-Column Equal Bento) -->
+<section class="max-w-7xl mx-auto px-6 lg:px-12 w-full py-8" id="pendidikan-pekerjaan">
+<div class="bg-surface rounded-3xl p-8 lg:p-12">
+<div class="text-center max-w-2xl mx-auto mb-10">
+<span class="inline-block px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm uppercase tracking-wider mb-2">Kapasitas Warga</span>
+<h2 class="font-h2 text-h2 text-on-surface mb-2">Pendidikan &amp; Mata Pencaharian</h2>
+<p class="font-body-md text-body-md text-text-secondary">Profil kapasitas sumber daya manusia dan sektor ekonomi penggerak desa</p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+<!-- Card 1: Tingkat Pendidikan -->
+<div class="bg-surface-card rounded-2xl p-7 lg:p-8 shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-start justify-between mb-6">
+<div>
+<h3 class="font-h3 text-h3 text-on-surface">Distribusi Tingkat Pendidikan</h3>
+<p class="font-body-sm text-body-sm text-text-secondary mt-1">Pendidikan formal yang ditamatkan penduduk usia 15 tahun ke atas</p>
+</div>
+<div class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center text-on-primary-container">
+<span class="material-symbols-outlined text-[20px]">school</span>
+</div>
+</div>
+<!-- Visualization Bars with Details -->
+<div class="space-y-4">
+<div class="p-3 rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors">
+<div class="flex justify-between items-center mb-1 text-label-md font-label-md">
+<span class="text-text-primary">Tamat SD / Sederajat</span>
+<span class="tabular-nums font-semibold text-text-primary">1.620 Jiwa <span class="text-text-secondary font-normal">(25,2%)</span></span>
+</div>
+<div class="w-full h-2.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-outline-variant rounded-full" style="width: 25.2%;"></div>
+</div>
+</div>
+<div class="p-3 rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors">
+<div class="flex justify-between items-center mb-1 text-label-md font-label-md">
+<span class="text-text-primary">Tamat SLTP / SMP Sederajat</span>
+<span class="tabular-nums font-semibold text-text-primary">1.410 Jiwa <span class="text-text-secondary font-normal">(22,0%)</span></span>
+</div>
+<div class="w-full h-2.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-tertiary-fixed rounded-full" style="width: 22.0%;"></div>
+</div>
+</div>
+<div class="p-3 rounded-xl bg-secondary-container/40 hover:bg-secondary-container/60 transition-colors">
+<div class="flex justify-between items-center mb-1 text-label-md font-label-md">
+<span class="text-primary font-semibold flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+                    Tamat SLTA / SMA / SMK (Porsi Terbesar)
+                  </span>
+<span class="tabular-nums font-bold text-primary">2.150 Jiwa (33,5%)</span>
+</div>
+<div class="w-full h-2.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-primary-container rounded-full" style="width: 33.5%;"></div>
+</div>
+</div>
+<div class="p-3 rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors">
+<div class="flex justify-between items-center mb-1 text-label-md font-label-md">
+<span class="text-text-primary">Diploma (D1–D3 / Kejuruan)</span>
+<span class="tabular-nums font-semibold text-text-primary">340 Jiwa <span class="text-text-secondary font-normal">(5,3%)</span></span>
+</div>
+<div class="w-full h-2.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-tertiary-container rounded-full" style="width: 5.3%;"></div>
+</div>
+</div>
+<div class="p-3 rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors">
+<div class="flex justify-between items-center mb-1 text-label-md font-label-md">
+<span class="text-text-primary">Sarjana &amp; Pascasarjana (S1 / S2)</span>
+<span class="tabular-nums font-semibold text-text-primary">900 Jiwa <span class="text-text-secondary font-normal">(14,0%)</span></span>
+</div>
+<div class="w-full h-2.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-primary rounded-full" style="width: 14.0%;"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-6 pt-4 flex items-center justify-between text-body-sm font-body-sm text-text-secondary">
+<span>Rata-rata Lama Sekolah: <strong>9,4 Tahun</strong></span>
+<span class="inline-flex items-center gap-1 text-primary font-medium">
+<span class="material-symbols-outlined text-[16px]">verified</span> Program Wajar 12 Tahun
+            </span>
+</div>
+</div>
+<!-- Card 2: Mata Pencaharian Dominan -->
+<div class="bg-surface-card rounded-2xl p-7 lg:p-8 shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-start justify-between mb-6">
+<div>
+<h3 class="font-h3 text-h3 text-on-surface">Sektor Mata Pencaharian Dominan</h3>
+<p class="font-body-sm text-body-sm text-text-secondary mt-1">Mata pencaharian pokok kepala keluarga dan angkatan kerja aktif</p>
+</div>
+<div class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center text-on-primary-container">
+<span class="material-symbols-outlined text-[20px]">work</span>
+</div>
+</div>
+<!-- Visualization Bars -->
+<div class="space-y-4">
+<div class="p-3 rounded-xl bg-secondary-container/40">
+<div class="flex justify-between items-center mb-1 text-label-md font-label-md">
+<span class="text-primary font-semibold flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+                    Pertanian &amp; Hortikultura (Sektor Unggulan)
+                  </span>
+<span class="tabular-nums font-bold text-primary">1.840 Orang (38,2%)</span>
+</div>
+<div class="w-full h-2.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-primary-container rounded-full" style="width: 38.2%;"></div>
+</div>
+</div>
+<div class="p-3 rounded-xl bg-surface-container-low">
+<div class="flex justify-between items-center mb-1 text-label-md font-label-md">
+<span class="text-text-primary">Wiraswasta / Pelaku UMKM &amp; Dagang</span>
+<span class="tabular-nums font-semibold text-text-primary">1.210 Orang <span class="text-text-secondary font-normal">(25,1%)</span></span>
+</div>
+<div class="w-full h-2.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-tertiary-container rounded-full" style="width: 25.1%;"></div>
+</div>
+</div>
+<div class="p-3 rounded-xl bg-surface-container-low">
+<div class="flex justify-between items-center mb-1 text-label-md font-label-md">
+<span class="text-text-primary">Karyawan Swasta / Sektor Industri</span>
+<span class="tabular-nums font-semibold text-text-primary">920 Orang <span class="text-text-secondary font-normal">(19,1%)</span></span>
+</div>
+<div class="w-full h-2.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 19.1%;"></div>
+</div>
+</div>
+<div class="p-3 rounded-xl bg-surface-container-low">
+<div class="flex justify-between items-center mb-1 text-label-md font-label-md">
+<span class="text-text-primary">PNS, Guru, TNI &amp; Polri</span>
+<span class="tabular-nums font-semibold text-text-primary">360 Orang <span class="text-text-secondary font-normal">(7,5%)</span></span>
+</div>
+<div class="w-full h-2.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-primary-fixed rounded-full" style="width: 7.5%;"></div>
+</div>
+</div>
+<div class="p-3 rounded-xl bg-surface-container-low">
+<div class="flex justify-between items-center mb-1 text-label-md font-label-md">
+<span class="text-text-primary">Konstruksi, Jasa &amp; Lain-lain</span>
+<span class="tabular-nums font-semibold text-text-primary">490 Orang <span class="text-text-secondary font-normal">(10,1%)</span></span>
+</div>
+<div class="w-full h-2.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-outline-variant rounded-full" style="width: 10.1%;"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-6 pt-4 flex items-center justify-between text-body-sm font-body-sm text-text-secondary">
+<span>Total Angkatan Kerja Aktif: <strong class="text-text-primary tabular-nums">4.820 Orang</strong></span>
+<span class="inline-flex items-center gap-1 text-primary font-medium">
+<span class="material-symbols-outlined text-[16px]">trending_up</span> BUMDes Berdaya
+            </span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section D: Agama, Status Sipil & Wilayah (3 Bento Cards Grid) -->
+<section class="max-w-7xl mx-auto px-6 lg:px-12 w-full py-8" id="sosial-wilayah">
+<div class="bg-surface rounded-3xl p-8 lg:p-12">
+<div class="text-center max-w-2xl mx-auto mb-10">
+<span class="inline-block px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm uppercase tracking-wider mb-2">Kerukunan &amp; Geografis</span>
+<h2 class="font-h2 text-h2 text-on-surface mb-2">Demografi Sosial &amp; Persebaran Wilayah</h2>
+<p class="font-body-md text-body-md text-text-secondary">Data kerukunan beragama, status perkawinan, dan kepadatan per dusun</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Card 1: Agama -->
+<div class="bg-surface-card rounded-2xl p-6 lg:p-7 shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-3 mb-4">
+<div class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center text-on-primary-container">
+<span class="material-symbols-outlined text-[20px]">mosque</span>
+</div>
+<div>
+<h3 class="font-h3 text-h3 text-on-surface">Pemeluk Agama</h3>
+<span class="font-body-sm text-body-sm text-text-secondary">Toleransi harmonis</span>
+</div>
+</div>
+<div class="space-y-4 my-6">
+<div>
+<div class="flex justify-between items-center text-label-md font-label-md mb-1">
+<span class="text-text-primary">Islam</span>
+<span class="tabular-nums font-semibold text-text-primary">6.368 Jiwa (99,19%)</span>
+</div>
+<div class="w-full h-2 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-primary-container rounded-full" style="width: 99.19%;"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between items-center text-label-md font-label-md mb-1">
+<span class="text-text-primary">Kristen Protestan</span>
+<span class="tabular-nums font-semibold text-text-primary">38 Jiwa (0,59%)</span>
+</div>
+<div class="w-full h-2 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-tertiary-container rounded-full" style="width: 5.9%;"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between items-center text-label-md font-label-md mb-1">
+<span class="text-text-primary">Katolik</span>
+<span class="tabular-nums font-semibold text-text-primary">14 Jiwa (0,22%)</span>
+</div>
+<div class="w-full h-2 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 2.2%;"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="p-3.5 rounded-xl bg-surface-container-low text-body-sm font-body-sm text-text-secondary">
+<span class="font-semibold text-on-surface">Sarana Peribadatan:</span> 8 Masjid Jami', 24 Musholla/Langgar yang tersebar di semua dusun.
+          </div>
+</div>
+<!-- Card 2: Status Perkawinan -->
+<div class="bg-surface-card rounded-2xl p-6 lg:p-7 shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-3 mb-4">
+<div class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center text-on-primary-container">
+<span class="material-symbols-outlined text-[20px]">favorite</span>
+</div>
+<div>
+<h3 class="font-h3 text-h3 text-on-surface">Status Perkawinan</h3>
+<span class="font-body-sm text-body-sm text-text-secondary">Data pencatatan sipil</span>
+</div>
+</div>
+<div class="space-y-4 my-6">
+<div>
+<div class="flex justify-between items-center text-label-md font-label-md mb-1">
+<span class="text-text-primary">Kawin</span>
+<span class="tabular-nums font-semibold text-text-primary">3.480 Jiwa (54,2%)</span>
+</div>
+<div class="w-full h-2 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-primary-container rounded-full" style="width: 54.2%;"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between items-center text-label-md font-label-md mb-1">
+<span class="text-text-primary">Belum Kawin</span>
+<span class="tabular-nums font-semibold text-text-primary">2.390 Jiwa (37,2%)</span>
+</div>
+<div class="w-full h-2 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-tertiary-container rounded-full" style="width: 37.2%;"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between items-center text-label-md font-label-md mb-1">
+<span class="text-text-primary">Cerai Mati</span>
+<span class="tabular-nums font-semibold text-text-primary">370 Jiwa (5,8%)</span>
+</div>
+<div class="w-full h-2 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 5.8%;"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between items-center text-label-md font-label-md mb-1">
+<span class="text-text-primary">Cerai Hidup</span>
+<span class="tabular-nums font-semibold text-text-primary">180 Jiwa (2,8%)</span>
+</div>
+<div class="w-full h-2 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-outline-variant rounded-full" style="width: 2.8%;"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="p-3.5 rounded-xl bg-surface-container-low text-body-sm font-body-sm text-text-secondary">
+<span class="font-semibold text-on-surface">Pusat Layanan:</span> Integrasi konsultasi BP4 dan Pos Binaan Keluarga Sakinah Desa.
+          </div>
+</div>
+<!-- Card 3: Persebaran per Dusun -->
+<div class="bg-surface-card rounded-2xl p-6 lg:p-7 shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-3 mb-4">
+<div class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center text-on-primary-container">
+<span class="material-symbols-outlined text-[20px]">share_location</span>
+</div>
+<div>
+<h3 class="font-h3 text-h3 text-on-surface">Kepadatan Dusun</h3>
+<span class="font-body-sm text-body-sm text-text-secondary">Wilayah 4 dusun</span>
+</div>
+</div>
+<div class="space-y-3.5 my-5">
+<div class="p-3 rounded-xl bg-surface-container-low">
+<div class="flex justify-between items-center font-label-md text-label-md mb-0.5">
+<span class="font-semibold text-on-surface">Dusun Krajan</span>
+<span class="text-primary font-bold tabular-nums">2.140 Jiwa</span>
+</div>
+<span class="font-body-sm text-body-sm text-text-secondary">640 KK • 6 RT / 2 RW (Pusat Balai)</span>
+</div>
+<div class="p-3 rounded-xl bg-surface-container-low">
+<div class="flex justify-between items-center font-label-md text-label-md mb-0.5">
+<span class="font-semibold text-on-surface">Dusun Gendingan Kidul</span>
+<span class="text-primary font-bold tabular-nums">1.810 Jiwa</span>
+</div>
+<span class="font-body-sm text-body-sm text-text-secondary">570 KK • 5 RT / 2 RW (Sentra Tani)</span>
+</div>
+<div class="p-3 rounded-xl bg-surface-container-low">
+<div class="flex justify-between items-center font-label-md text-label-md mb-0.5">
+<span class="font-semibold text-on-surface">Dusun Ngemplak</span>
+<span class="text-primary font-bold tabular-nums">1.250 Jiwa</span>
+</div>
+<span class="font-body-sm text-body-sm text-text-secondary">390 KK • 4 RT / 1 RW (UMKM &amp; Kriya)</span>
+</div>
+<div class="p-3 rounded-xl bg-surface-container-low">
+<div class="flex justify-between items-center font-label-md text-label-md mb-0.5">
+<span class="font-semibold text-on-surface">Dusun Karangtengah</span>
+<span class="text-primary font-bold tabular-nums">1.220 Jiwa</span>
+</div>
+<span class="font-body-sm text-body-sm text-text-secondary">380 KK • 4 RT / 1 RW (Hortikultura)</span>
+</div>
+</div>
+</div>
+<div class="text-body-sm font-body-sm text-primary flex items-center gap-1 font-medium pt-1">
+<span class="material-symbols-outlined text-[16px]">location_on</span> Total Luas Wilayah: 384,5 Hektar
+          </div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section E: Status Indeks Desa Membangun (IDM) & Pre-Footer Banner -->
+<section class="max-w-7xl mx-auto px-6 lg:px-12 w-full py-8" id="status-idm">
+<div class="bg-surface rounded-3xl p-8 lg:p-12">
+<!-- IDM Featured Bento Card -->
+<div class="bg-surface-card rounded-3xl p-8 lg:p-10 shadow-md">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-6 pb-8">
+<div>
+<span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-secondary-container text-on-primary-container font-label-sm text-label-sm font-semibold mb-3">
+<span class="material-symbols-outlined text-[16px] text-primary">verified</span>
+              Status Perkembangan Desa Nasional — Kemendesa PDTT RI
+            </span>
+<div class="flex items-center gap-3">
+<h2 class="font-h2 text-h2 text-text-primary tracking-tight">Status IDM: DESA MANDIRI</h2>
+<span class="inline-flex items-center px-3 py-1 rounded-full bg-secondary-container text-primary font-label-md text-label-md font-bold">
+                ★ Bintang Emas
+              </span>
+</div>
+<p class="font-body-md text-body-md text-text-secondary mt-1 max-w-2xl">
+              Peringkat status keberdayaan dan kemandirian tertinggi dengan tata kelola sosial, ekonomi, dan kelestarian lingkungan yang tangguh.
+            </p>
+</div>
+<div class="bg-surface-container-low rounded-2xl p-6 flex flex-col items-center justify-center shrink-0 min-w-[200px] text-center">
+<span class="font-label-sm text-label-sm text-text-secondary uppercase tracking-wider mb-1">Skor IDM 2026</span>
+<span class="font-h1 text-h1 text-primary tabular-nums">0,8452</span>
+<span class="inline-block mt-1 font-label-sm text-label-sm text-tertiary font-semibold px-2.5 py-0.5 rounded-full bg-secondary-container">
+              Kategori Tertinggi (Mandiri)
+            </span>
+</div>
+</div>
+<!-- 3 Sub-Index Cards Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-6">
+<!-- Sub-Index 1: IKS -->
+<div class="bg-surface-container-low rounded-2xl p-6 flex flex-col justify-between">
+<div>
+<div class="flex justify-between items-start mb-3">
+<span class="font-label-sm text-label-sm text-text-secondary uppercase">Dimensi Sosial</span>
+<span class="px-2.5 py-0.5 rounded-full bg-secondary-container text-primary font-label-sm text-label-sm font-bold tabular-nums">
+                  0,8800
+                </span>
+</div>
+<h3 class="font-h3 text-h3 text-on-surface mb-1">Indeks Ketahanan Sosial (IKS)</h3>
+<p class="font-body-sm text-body-sm text-tertiary font-semibold mb-3">Predikat: Sangat Kuat</p>
+<div class="w-full h-2 bg-surface-container rounded-full overflow-hidden mb-4">
+<div class="h-full bg-primary-container rounded-full" style="width: 88%;"></div>
+</div>
+<p class="font-body-sm text-body-sm text-text-secondary leading-relaxed">
+                Ketersediaan poskesdes &amp; posyandu terpadu, modal sosial gotong royong tinggi, jaminan pendidikan dasar gratis, dan nihil konflik sosial.
+              </p>
+</div>
+<div class="mt-4 pt-3 flex items-center gap-1.5 text-label-sm font-label-sm text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-primary">check_circle</span>
+<span>100% Akses Layanan Dasar</span>
+</div>
+</div>
+<!-- Sub-Index 2: IKE -->
+<div class="bg-surface-container-low rounded-2xl p-6 flex flex-col justify-between">
+<div>
+<div class="flex justify-between items-start mb-3">
+<span class="font-label-sm text-label-sm text-text-secondary uppercase">Dimensi Ekonomi</span>
+<span class="px-2.5 py-0.5 rounded-full bg-secondary-container text-primary font-label-sm text-label-sm font-bold tabular-nums">
+                  0,8200
+                </span>
+</div>
+<h3 class="font-h3 text-h3 text-on-surface mb-1">Indeks Ketahanan Ekonomi (IKE)</h3>
+<p class="font-body-sm text-body-sm text-tertiary font-semibold mb-3">Predikat: Kuat</p>
+<div class="w-full h-2 bg-surface-container rounded-full overflow-hidden mb-4">
+<div class="h-full bg-primary-container rounded-full" style="width: 82%;"></div>
+</div>
+<p class="font-body-sm text-body-sm text-text-secondary leading-relaxed">
+                Pasar desa aktif, BUMDes 'Karya Mandiri' produktif dividen, sentra UMKM kuliner &amp; kriya terkurasi, serta akses inklusi perbankan lengkap.
+              </p>
+</div>
+<div class="mt-4 pt-3 flex items-center gap-1.5 text-label-sm font-label-sm text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-primary">check_circle</span>
+<span>Lembaga Keuangan Mikro Aktif</span>
+</div>
+</div>
+<!-- Sub-Index 3: IKL -->
+<div class="bg-surface-container-low rounded-2xl p-6 flex flex-col justify-between">
+<div>
+<div class="flex justify-between items-start mb-3">
+<span class="font-label-sm text-label-sm text-text-secondary uppercase">Dimensi Lingkungan</span>
+<span class="px-2.5 py-0.5 rounded-full bg-secondary-container text-primary font-label-sm text-label-sm font-bold tabular-nums">
+                  0,8350
+                </span>
+</div>
+<h3 class="font-h3 text-h3 text-on-surface mb-1">Indeks Ketahanan Lingkungan (IKL)</h3>
+<p class="font-body-sm text-body-sm text-tertiary font-semibold mb-3">Predikat: Kuat</p>
+<div class="w-full h-2 bg-surface-container rounded-full overflow-hidden mb-4">
+<div class="h-full bg-primary-container rounded-full" style="width: 83.5%;"></div>
+</div>
+<p class="font-body-sm text-body-sm text-text-secondary leading-relaxed">
+                Sistem drainase irigasi tersier terawat bebas genangan banjir, pengelolaan sanitasi layak lingkungan, dan nihil kawasan rawan longsor.
+              </p>
+</div>
+<div class="mt-4 pt-3 flex items-center gap-1.5 text-label-sm font-label-sm text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-primary">check_circle</span>
+<span>100% ODF Bebas Buang Air</span>
+</div>
+</div>
+</div>
+<div class="mt-8 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+<p class="font-body-sm text-body-sm text-text-secondary">
+            Surat Keputusan Menteri Desa, PDTT RI No. 80/2026 tentang Status Kemajuan dan Kemandirian Desa Seluruh Indonesia.
+          </p>
+<a class="inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-surface-card hover:bg-surface-container text-primary font-label-md text-label-md transition-colors shadow-sm shrink-0" href="#">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span>Unduh Berita Acara Status IDM 2026 (PDF)</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Section F: Pre-Footer Callout Banner -->
+<section class="max-w-7xl mx-auto px-6 lg:px-12 w-full py-8 mb-8">
+<div class="relative overflow-hidden rounded-3xl bg-surface-dark text-text-on-dark p-8 md:p-12 lg:p-14 shadow-xl">
+<!-- Decorative background blur -->
+<div class="absolute -left-20 -bottom-20 w-80 h-80 bg-primary-container/20 rounded-full blur-3xl pointer-events-none"></div>
+<div class="absolute right-10 top-0 w-72 h-72 bg-primary/20 rounded-full blur-2xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col lg:flex-row items-center justify-between gap-8">
+<div class="max-w-2xl text-center lg:text-left">
+<span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 text-primary-fixed font-label-sm text-label-sm mb-3">
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+            Transparansi Tata Kelola Publik
+          </span>
+<h2 class="font-h2 text-h2 text-surface-container-lowest mb-3">
+            Transparansi Anggaran &amp; Realisasi APBDes 2026
+          </h2>
+<p class="font-body-md text-body-md text-outline-variant leading-relaxed">
+            Lihat rincian penerimaan Pendapatan Asli Desa (PADes), Dana Desa (DD), Alokasi Dana Desa (ADD), serta laporan realisasi fisik pembangunan secara terbuka dan akuntabel.
+          </p>
+</div>
+<div class="flex flex-col sm:flex-row items-center gap-3 shrink-0">
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-primary-container hover:bg-primary-hover text-on-primary-container font-label-lg text-label-lg font-semibold transition-all shadow-md" data-path="data-dan-transparansi" href="#">
+<span>Buka Laporan APBDes</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-white/10 hover:bg-white/20 text-surface-container-lowest font-label-lg text-label-lg font-semibold transition-all" href="#">
+<span class="material-symbols-outlined text-[18px]">file_download</span>
+<span>Unduh Data CSV / PDF</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+</div></main><footer class="w-full bg-surface-dark text-text-on-dark py-16 border-t border-[#232b25]"><div class="max-w-7xl mx-auto px-6 lg:px-12"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12"><div class="flex flex-col gap-4"><div class="flex items-center gap-3"><div class="w-9 h-9 rounded-full bg-primary-container flex items-center justify-center text-on-primary-container"><span class="material-symbols-outlined text-[20px]">account_balance</span></div><span class="font-headline-sm text-headline-sm text-surface-container-lowest leading-tight">Desa Gendingan</span></div><p class="font-body-sm text-body-sm text-outline-variant leading-relaxed">Portal Resmi Pemerintahan Desa Gendingan, Kecamatan Tulungagung, Kabupaten Tulungagung, Jawa Timur. Terintegrasi Sistem Informasi Desa (SID) dan PPID Desa.</p><div class="flex items-center gap-2 pt-2"><span class="px-3 py-1 rounded-full bg-[#1e2520] border border-[#2e3730] font-label-sm text-label-sm text-primary-fixed">PPID Siap Melayani</span></div></div><div class="flex flex-col gap-3"><span class="font-label-lg text-label-lg text-surface-container-lowest font-semibold tracking-wide uppercase">Tautan Cepat</span><div class="flex flex-col gap-2 font-body-sm text-body-sm text-outline-variant"><a class="hover:text-surface-container-lowest transition-colors" data-path="beranda" href="#">Beranda Utama</a><a class="hover:text-surface-container-lowest transition-colors" data-path="pemerintahan" href="#">Struktur Pemerintahan</a><a class="hover:text-surface-container-lowest transition-colors" data-path="layanan-desa" href="#">Layanan Surat Mandiri</a><a class="hover:text-surface-container-lowest transition-colors" data-path="potensi-desa" href="#">Potensi Pertanian &amp; UMKM</a><a class="hover:text-surface-container-lowest transition-colors" data-path="berita-dan-agenda" href="#">Kabar Desa &amp; Agenda</a></div></div><div class="flex flex-col gap-3"><span class="font-label-lg text-label-lg text-surface-container-lowest font-semibold tracking-wide uppercase">Tautan Transparansi</span><div class="flex flex-col gap-2 font-body-sm text-body-sm text-outline-variant"><a class="hover:text-surface-container-lowest transition-colors" data-path="data-dan-transparansi" href="#">Realisasi APBDes 2024</a><a class="hover:text-surface-container-lowest transition-colors" data-path="data-dan-transparansi" href="#">Laporan Penyaluran BLT-DD</a><a class="hover:text-surface-container-lowest transition-colors" data-path="data-dan-transparansi" href="#">Pembangunan Fisik Desa</a><a class="hover:text-surface-container-lowest transition-colors" data-path="data-dan-transparansi" href="#">Statistik Kependudukan</a><a class="hover:text-surface-container-lowest transition-colors" data-path="data-dan-transparansi" href="#">Regulasi &amp; Peraturan Desa</a></div></div><div class="flex flex-col gap-3"><span class="font-label-lg text-label-lg text-surface-container-lowest font-semibold tracking-wide uppercase">Kontak &amp; Jam Pelayanan</span><div class="flex flex-col gap-2 font-body-sm text-body-sm text-outline-variant"><p class="text-surface-container-high font-medium">Balai Desa Gendingan</p><p>Jl. Raya Gendingan No. 01, Tulungagung, Jawa Timur 66212</p><div class="pt-2 flex flex-col gap-1"><p class="text-surface-container-high"><span class="font-semibold">Senin - Kamis:</span> 08.00 - 15.00 WIB</p><p class="text-surface-container-high"><span class="font-semibold">Jumat:</span> 08.00 - 11.00 WIB</p><p class="text-text-secondary"><span class="font-semibold">Sabtu &amp; Minggu:</span> Tutup</p></div><div class="pt-2 flex items-center gap-2"><span class="material-symbols-outlined text-[16px] text-primary-fixed">call</span><span>(0355) 321-xxx</span></div></div></div></div><div class="mt-12 pt-8 border-t border-[#232b25] flex flex-col md:flex-row items-center justify-between gap-4 font-body-sm text-body-sm text-outline-variant"><p>© 2024 Pemerintah Desa Gendingan, Kabupaten Tulungagung. Hak Cipta Dilindungi Undang-Undang.</p><p class="font-label-sm text-label-sm text-text-secondary">Didukung oleh SID &amp; PPID Kabupaten Tulungagung</p></div></div></footer></body></html>

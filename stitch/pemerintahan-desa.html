@@ -1,0 +1,1077 @@
+<!DOCTYPE html>
+
+<html lang="id"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "inverse-surface": "#2c322e",
+          "on-primary-fixed-variant": "#005313",
+          "surface-dim": "#d6dcd5",
+          "outline-variant": "#becab9",
+          "on-primary-container": "#003c0b",
+          "tertiary": "#1b6d24",
+          "on-secondary-fixed-variant": "#3e4a41",
+          "on-background": "#171d19",
+          "text-secondary": "#68706B",
+          "surface-container-lowest": "#ffffff",
+          "primary-container": "#4caf50",
+          "surface-container": "#eaefe9",
+          "text-on-dark": "#F4F6F4",
+          "error": "#DC2626",
+          "on-secondary": "#ffffff",
+          "primary": "#006e1c",
+          "primary-fixed-dim": "#78dc77",
+          "secondary": "#556158",
+          "surface-bright": "#f5fbf4",
+          "on-surface": "#171d19",
+          "outline": "#6f7a6b",
+          "tertiary-fixed-dim": "#88d982",
+          "on-tertiary": "#ffffff",
+          "surface-dark": "#141815",
+          "on-primary": "#ffffff",
+          "on-surface-variant": "#3f4a3c",
+          "text-primary": "#1E2420",
+          "inverse-on-surface": "#ecf2ec",
+          "on-error-container": "#93000a",
+          "primary-fixed": "#94f990",
+          "on-secondary-fixed": "#131e17",
+          "surface-container-highest": "#dee4dd",
+          "on-tertiary-container": "#003c0a",
+          "on-tertiary-fixed": "#002204",
+          "surface-variant": "#dee4dd",
+          "surface": "#F4F6F4",
+          "border": "#DCE2DD",
+          "on-primary-fixed": "#002204",
+          "secondary-container": "#d9e6da",
+          "surface-tint": "#006e1c",
+          "secondary-fixed": "#d9e6da",
+          "on-secondary-container": "#5b675e",
+          "background": "#FFFFFF",
+          "on-tertiary-fixed-variant": "#005312",
+          "warning": "#D97706",
+          "inverse-primary": "#78dc77",
+          "surface-card": "#FFFFFF",
+          "tertiary-container": "#5dac5b",
+          "on-error": "#ffffff",
+          "secondary-fixed-dim": "#bdcabe",
+          "error-container": "#ffdad6",
+          "tertiary-fixed": "#a3f69c",
+          "surface-container-high": "#e4eae3",
+          "primary-hover": "#3D9140",
+          "surface-container-low": "#eff5ee"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.25rem",
+          "lg": "0.5rem",
+          "xl": "0.75rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "space-xl": "2rem",
+          "gutter": "1.5rem",
+          "space-lg": "1.5rem",
+          "2xl": "48px",
+          "xl": "32px",
+          "xs": "4px",
+          "3xl": "64px",
+          "lg": "24px",
+          "gutter-sm": "1rem",
+          "margin-sm": "1rem",
+          "space-sm": "0.5rem",
+          "margin": "2rem",
+          "sm": "8px",
+          "space-md": "1rem",
+          "space-3xl": "4rem",
+          "space-2xl": "3rem",
+          "space-xs": "0.25rem",
+          "md": "16px"
+        },
+        "fontFamily": {
+          "label-sm": [
+            "\"Plus Jakarta Sans, Inter, sans-serif\""
+          ],
+          "headline-sm": [
+            "Playfair Display"
+          ],
+          "headline-xl": [
+            "Playfair Display"
+          ],
+          "h2": [
+            "\"Playfair Display, Georgia, serif\""
+          ],
+          "label-md": [
+            "Plus Jakarta Sans"
+          ],
+          "h3": [
+            "\"Playfair Display, Georgia, serif\""
+          ],
+          "headline-md": [
+            "Playfair Display"
+          ],
+          "body-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "h1": [
+            "\"Playfair Display, Georgia, serif\""
+          ],
+          "body-md": [
+            "\"Plus Jakarta Sans, Inter, sans-serif\""
+          ],
+          "headline-lg": [
+            "Playfair Display"
+          ],
+          "label-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "body-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-xl-mobile": [
+            "Playfair Display"
+          ]
+        },
+        "fontSize": {
+          "label-sm": [
+            "0.75rem",
+            {
+              "lineHeight": "1.4",
+              "fontWeight": "500"
+            }
+          ],
+          "headline-sm": [
+            "18px",
+            {
+              "lineHeight": "24px",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-xl": [
+            "44px",
+            {
+              "lineHeight": "51px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "700"
+            }
+          ],
+          "h2": [
+            "2rem",
+            {
+              "lineHeight": "1.2",
+              "fontWeight": "600"
+            }
+          ],
+          "label-md": [
+            "13px",
+            {
+              "lineHeight": "18px",
+              "fontWeight": "500"
+            }
+          ],
+          "h3": [
+            "1.25rem",
+            {
+              "lineHeight": "1.35",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-md": [
+            "20px",
+            {
+              "lineHeight": "27px",
+              "fontWeight": "600"
+            }
+          ],
+          "body-lg": [
+            "17px",
+            {
+              "lineHeight": "28px",
+              "fontWeight": "400"
+            }
+          ],
+          "h1": [
+            "2.75rem",
+            {
+              "lineHeight": "1.15",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "700"
+            }
+          ],
+          "body-md": [
+            "0.9375rem",
+            {
+              "lineHeight": "1.6",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-lg": [
+            "32px",
+            {
+              "lineHeight": "38px",
+              "fontWeight": "600"
+            }
+          ],
+          "label-lg": [
+            "14px",
+            {
+              "lineHeight": "20px",
+              "fontWeight": "600"
+            }
+          ],
+          "body-sm": [
+            "13px",
+            {
+              "lineHeight": "20px",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-xl-mobile": [
+            "32px",
+            {
+              "lineHeight": "38px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "700"
+            }
+          ]
+        }
+      },
+    },
+  }</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between gap-4"><div class="flex items-center gap-3 shrink-0"><div class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center text-on-primary-container shadow-sm"><span class="material-symbols-outlined text-[24px]">account_balance</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface leading-tight tracking-tight">Desa Gendingan</span><span class="font-label-sm text-label-sm text-on-surface-variant">Kab. Tulungagung</span></div></div><nav class="hidden xl:flex items-center gap-1 bg-surface-container-low px-2 py-1.5 rounded-full border border-border" data-active-classes="bg-secondary-container text-on-secondary-container font-semibold rounded-full"><a class="px-3 py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="beranda" href="#">Beranda</a><div class="relative group"><button class="flex items-center gap-1 px-3 py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" type="button">Profil<span class="material-symbols-outlined text-[16px]">expand_more</span></button><div class="absolute top-full left-0 mt-2 hidden group-hover:block bg-surface-card rounded-xl shadow-lg border border-border py-2 min-w-[180px] z-50"><a class="block px-4 py-2 font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface" data-path="profil-desa" href="#">Tentang Desa</a><a class="block px-4 py-2 font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface" data-path="visi-misi" href="#">Visi &amp; Misi</a><a class="block px-4 py-2 font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface" data-path="sejarah-desa" href="#">Sejarah</a></div></div><a aria-current="page" class="px-3 py-1.5 transition-colors bg-secondary-container text-on-secondary-container font-semibold rounded-full" data-path="pemerintahan" href="#">Pemerintahan</a><a class="px-3 py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="data-dan-transparansi" href="#">Data &amp; Transparansi</a><a class="px-3 py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="layanan-desa" href="#">Layanan</a><a class="px-3 py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="potensi-desa" href="#">Potensi</a><a class="px-3 py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="berita-dan-agenda" href="#">Berita</a><a class="px-3 py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="kontak-dan-lokasi" href="#">Kontak</a></nav><div class="flex items-center gap-3 shrink-0"><div class="relative hidden sm:flex items-center"><span class="material-symbols-outlined absolute left-3.5 text-on-surface-variant text-[18px]">search</span><input class="w-48 lg:w-56 pl-9 pr-4 py-2 rounded-full bg-surface-card border border-border text-on-surface placeholder:text-text-secondary font-label-md text-label-md focus:outline-none focus:border-primary-container focus:ring-1 focus:ring-primary-container transition-all" placeholder="Cari informasi publik..." type="text"/></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shadow-sm"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-surface min-h-[calc(100vh-20rem)]"><div class="flex flex-col w-full">
+<!-- Top Anchor -->
+<div class="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8 py-6 flex flex-col gap-10" id="top">
+<!-- 1. COMPACT HERO BANNER & SUB-NAV PILLS -->
+<section class="relative w-full rounded-[24px] overflow-hidden bg-surface-dark shadow-md">
+<!-- Background Graphic & Image Placeholder with Detailed Editorial Scrim -->
+<div class="absolute inset-0 bg-cover bg-center mix-blend-luminosity opacity-25" data-alt="Modern Indonesian village hall pendopo balai desa in Tulungagung with warm teak wood pillars, polished stone floor, national flag, clean architectural lines, lush green courtyard and morning tropical sunlight casting soft shadows." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCWcEyMitsIrFNp7MaHyH2BYGwlJf7UKuiuh9ch6hmhlUvpDiV8o8P9cLxHTwm1eIxhVGdo78TVkt2MIU99-J3_qXOMfXjIuLGNHVZKbaWLxLwze82PeOFbRg_GLzMvjdu3Zn6DDX6lFSPQZ6tpM8cNkxQmt8LvBY7QngSCl7mpuc19biPCGOejLEYjGL9yicpo2UjYFyVIQR8mJe9QzSlCSK-9ZQUTbZr16O8Fjo0')">
+</div>
+<div class="absolute inset-0 bg-gradient-to-r from-[#141815] via-[#141815]/95 to-[#1c2e21]/90"></div>
+<!-- Hero Content -->
+<div class="relative z-10 px-6 sm:px-10 lg:px-14 py-12 sm:py-16 flex flex-col items-center text-center max-w-4xl mx-auto">
+<!-- Breadcrumb Translucent Pill -->
+<div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-surface-container-lowest/10 backdrop-blur-md text-surface-container-lowest mb-6">
+<a class="font-label-sm text-label-sm text-surface-container-high hover:text-surface-container-lowest transition-colors flex items-center gap-1.5" data-path="beranda" href="#">
+<span class="material-symbols-outlined text-[15px]">home</span>
+            Beranda
+          </a>
+<span class="text-outline-variant font-label-sm text-label-sm">/</span>
+<span class="font-label-sm text-label-sm text-primary-fixed font-semibold tracking-wide">Pemerintahan Desa</span>
+</div>
+<!-- Headline -->
+<h1 class="font-h1 text-h1 text-surface-container-lowest font-headline-xl text-balance leading-tight mb-4">
+          Pemerintahan Desa Gendingan
+        </h1>
+<!-- Subheadline -->
+<p class="font-body-lg text-body-lg text-surface-container-high/90 max-w-2xl leading-relaxed text-balance">
+          Mengenal struktur organisasi, jajaran perangkat desa, Badan Permusyawaratan Desa (BPD), dan lembaga kemasyarakatan yang siap melayani warga dengan profesional, transparan, dan sepenuh hati.
+        </p>
+<!-- Metadata Ribbon -->
+<div class="flex flex-wrap items-center justify-center gap-3 pt-6 text-outline-variant font-label-sm text-label-sm">
+<span class="inline-flex items-center gap-1.5 text-primary-fixed">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+            SOTK Terverifikasi Permendagri 84/2015
+          </span>
+<span class="hidden sm:inline">•</span>
+<span class="inline-flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px]">calendar_today</span>
+            Periode Masa Bakti 2019–2027
+          </span>
+</div>
+</div>
+</section>
+<!-- Floating Pill Sub-Navigation -->
+<div class="-mt-4 relative z-20 flex justify-center">
+<nav class="bg-surface-card rounded-full p-1.5 shadow-[0_8px_30px_rgba(0,0,0,0.06)] flex flex-wrap items-center justify-center gap-1 max-w-full">
+<a class="px-5 py-2.5 rounded-full bg-primary text-on-primary font-label-md text-label-md font-semibold flex items-center gap-2 transition-all shadow-sm" href="#struktur">
+<span class="material-symbols-outlined text-[18px]">account_tree</span>
+<span>Sambutan &amp; Struktur</span>
+</a>
+<a class="px-5 py-2.5 rounded-full text-text-secondary hover:text-text-primary hover:bg-surface-container transition-all font-label-md text-label-md flex items-center gap-2" href="#perangkat">
+<span class="material-symbols-outlined text-[18px]">groups</span>
+<span>Perangkat Desa</span>
+</a>
+<a class="px-5 py-2.5 rounded-full text-text-secondary hover:text-text-primary hover:bg-surface-container transition-all font-label-md text-label-md flex items-center gap-2" href="#bpd">
+<span class="material-symbols-outlined text-[18px]">gavel</span>
+<span>BPD Desa</span>
+</a>
+<a class="px-5 py-2.5 rounded-full text-text-secondary hover:text-text-primary hover:bg-surface-container transition-all font-label-md text-label-md flex items-center gap-2" href="#lembaga">
+<span class="material-symbols-outlined text-[18px]">corporate_fare</span>
+<span>Lembaga Desa</span>
+</a>
+</nav>
+</div>
+<!-- 2. SECTION A — PROFIL KEPALA DESA & BAGAN STRUKTUR ORGANISASI (BENTO 12-COLUMNS) -->
+<section class="scroll-mt-28 w-full bg-surface rounded-[24px] p-6 sm:p-10 lg:p-12 flex flex-col gap-8 shadow-sm" id="struktur">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
+<div class="flex flex-col gap-1">
+<span class="text-tertiary font-label-sm text-label-sm font-semibold tracking-wider uppercase">Kepemimpinan &amp; Hierarki Organisasi</span>
+<h2 class="font-h2 text-h2 text-text-primary">Struktur Organisasi &amp; Tata Kerja (SOTK)</h2>
+</div>
+<p class="font-body-sm text-body-sm text-text-secondary max-w-md">
+          Penyelenggaraan urusan pemerintahan, pembangunan fisik, pembinaan, dan pemberdayaan masyarakat Desa Gendingan berbasis tata kelola akuntabel.
+        </p>
+</div>
+<!-- Bento Grid (5 cols vs 7 cols) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
+<!-- Left Bento Card (5 cols): Profil Kepala Desa -->
+<div class="lg:col-span-5 bg-surface-card rounded-[16px] p-6 sm:p-8 flex flex-col justify-between shadow-[0_4px_20px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_28px_rgba(0,0,0,0.07)] transition-all">
+<div class="flex flex-col gap-6">
+<!-- Portrait Frame -->
+<div class="relative w-full aspect-[4/5] rounded-[14px] overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover object-top" data-alt="Dignified portrait of Kepala Desa male Indonesian official in white PDU formal uniform with gold badges, calm friendly expression, warm natural studio lighting with Tulungagung municipal emblems in subtle background, sharp focus high resolution." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCqlQlFqDcRROq2Cf2PufE0YiEV-Y8pmgfxofjjEwqTY0ac1pbuzh0uHtPPoG3WLSxsV2jwV-kf5rJOoAQFusalGy6KVb96AVzkFNHsWfIg3Z06IQzvHzGE3LN62ahJ0MwjmBb6lm0hAXvrAblcXqOZ-23nFDOZkJK2aefKPw8Ba2_OqCsLz4QO-YOjL7Ji57ChWJGRjpmDcpvDKQPUz-eMbiw0UYhH5XIcoHU_Ado"/>
+<div class="absolute top-4 left-4">
+<span class="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-primary-container text-on-primary-container font-label-sm text-label-sm font-semibold shadow-sm">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+                  Masa Jabatan 2019–2027
+                </span>
+</div>
+<div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-surface-dark/80 via-surface-dark/30 to-transparent p-4 flex items-end">
+<span class="text-surface-container-lowest font-label-sm text-label-sm">Desa Gendingan, Kec. Tulungagung</span>
+</div>
+</div>
+<!-- Identitas & Jabatan -->
+<div class="flex flex-col gap-2">
+<span class="w-fit px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold">
+                Kepala Desa Gendingan
+              </span>
+<h3 class="font-h2 text-h2 text-text-primary leading-tight">
+                H. Supriyanto, S.Sos.
+              </h3>
+<p class="font-body-md text-body-md text-text-secondary italic leading-relaxed pt-1">
+                “Kami berkomitmen menjadikan Balai Desa Gendingan sebagai rumah pelayanan publik yang ramah, transparan, cepat, dan bebas pungli bagi segenap warga.”
+              </p>
+</div>
+</div>
+<!-- Metadata & Action Button -->
+<div class="pt-6 mt-6 bg-surface-container-low rounded-[12px] p-4 flex flex-col gap-3">
+<div class="flex flex-col gap-1 text-text-secondary font-label-sm text-label-sm">
+<div class="flex justify-between py-1">
+<span>Dasar Hukum Pelantikan:</span>
+<span class="font-medium text-text-primary tabular-nums">SK Bupati 188.45/420/2019</span>
+</div>
+<div class="flex justify-between py-1">
+<span>NIPD Resmi:</span>
+<span class="font-medium text-text-primary tabular-nums">19740815 201912 1 001</span>
+</div>
+</div>
+<a class="mt-2 w-full inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-full bg-primary text-on-primary font-label-md text-label-md font-semibold hover:bg-primary-hover transition-colors shadow-sm" href="#perangkat">
+<span>Lihat Rincian Tugas &amp; Wewenang</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Right Bento Card (7 cols): Bagan Struktur Organisasi -->
+<div class="lg:col-span-7 bg-surface-card rounded-[16px] p-6 sm:p-8 flex flex-col justify-between shadow-[0_4px_20px_rgba(0,0,0,0.04)]">
+<div class="flex flex-col gap-6">
+<!-- Header Card Right -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+<div class="flex flex-col">
+<h3 class="font-h3 text-h3 text-text-primary">Bagan Alur SOTK Desa</h3>
+<p class="font-body-sm text-body-sm text-text-secondary">Peraturan Bupati Tulungagung Nomor 14 Tahun 2018</p>
+</div>
+<button class="shrink-0 inline-flex items-center gap-2 px-4 py-2 rounded-full bg-secondary-container text-on-secondary-container hover:bg-secondary-fixed transition-colors font-label-sm text-label-sm font-semibold" type="button">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span>Unduh Bagan PDF</span>
+</button>
+</div>
+<!-- CSS Diagram Canvas -->
+<div class="bg-surface-container-low rounded-[14px] p-4 sm:p-6 flex flex-col gap-5">
+<!-- Level 1: Pucuk Pimpinan & BPD Partner -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<!-- Kepala Desa -->
+<div class="bg-primary text-on-primary p-3.5 rounded-[12px] shadow-sm flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-surface-container-lowest/20 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">account_balance</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-primary-fixed uppercase tracking-wider font-semibold">Kepala Desa</span>
+<span class="font-headline-sm text-headline-sm font-bold truncate">H. Supriyanto, S.Sos.</span>
+</div>
+</div>
+<!-- BPD (Mitra Kerja Dotted Relationship) -->
+<div class="bg-surface-card p-3.5 rounded-[12px] shadow-xs flex items-center gap-3 border-dashed border-2 border-outline-variant/60">
+<div class="w-10 h-10 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">gavel</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-tertiary uppercase tracking-wider font-semibold">Mitra Kerja (BPD)</span>
+<span class="font-body-md text-body-md font-semibold text-text-primary truncate">Drs. H. Mulyono (Ketua)</span>
+</div>
+</div>
+</div>
+<!-- Connecting Indicator -->
+<div class="flex items-center justify-center">
+<div class="w-0.5 h-4 bg-outline-variant"></div>
+</div>
+<!-- Level 2: Sekretaris Desa -->
+<div class="max-w-md mx-auto w-full bg-surface-card p-3.5 rounded-[12px] shadow-sm flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-tertiary/10 text-tertiary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">badge</span>
+</div>
+<div class="flex flex-col min-w-0 flex-1">
+<span class="font-label-sm text-label-sm text-text-secondary uppercase tracking-wider font-medium">Sekretaris Desa (Pimpinan Sekretariat)</span>
+<span class="font-body-md text-body-md font-bold text-text-primary">Drs. Bambang Wijaya</span>
+</div>
+</div>
+<!-- Connecting Indicator Split -->
+<div class="flex items-center justify-center">
+<div class="w-0.5 h-4 bg-outline-variant"></div>
+</div>
+<!-- Level 3: Pelaksana Staf Sekretariat (Kaur) & Teknis (Kasi) -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<!-- Kelompok Kaur (Sekretariat) -->
+<div class="bg-surface-card p-4 rounded-[12px] shadow-sm flex flex-col gap-3">
+<div class="flex items-center justify-between pb-2">
+<span class="font-label-sm text-label-sm font-bold text-tertiary uppercase tracking-wider">Unsur Staf Sekretariat</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container font-label-sm text-label-sm text-text-secondary">3 Kaur</span>
+</div>
+<div class="flex flex-col gap-2">
+<div class="p-2.5 rounded-[8px] bg-surface-container-low flex flex-col">
+<span class="font-label-sm text-label-sm text-text-secondary">Kaur Tata Usaha &amp; Umum</span>
+<span class="font-body-sm text-body-sm font-semibold text-text-primary">Hendro Susilo</span>
+</div>
+<div class="p-2.5 rounded-[8px] bg-surface-container-low flex flex-col">
+<span class="font-label-sm text-label-sm text-text-secondary">Kaur Keuangan (Bendahara Desa)</span>
+<span class="font-body-sm text-body-sm font-semibold text-text-primary">Siti Aminah, S.E.</span>
+</div>
+<div class="p-2.5 rounded-[8px] bg-surface-container-low flex flex-col">
+<span class="font-label-sm text-label-sm text-text-secondary">Kaur Perencanaan &amp; SID</span>
+<span class="font-body-sm text-body-sm font-semibold text-text-primary">Rizky Pratama, S.Kom.</span>
+</div>
+</div>
+</div>
+<!-- Kelompok Kasi (Pelaksana Teknis) -->
+<div class="bg-surface-card p-4 rounded-[12px] shadow-sm flex flex-col gap-3">
+<div class="flex items-center justify-between pb-2">
+<span class="font-label-sm text-label-sm font-bold text-tertiary uppercase tracking-wider">Pelaksana Teknis Lapangan</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container font-label-sm text-label-sm text-text-secondary">3 Kasi</span>
+</div>
+<div class="flex flex-col gap-2">
+<div class="p-2.5 rounded-[8px] bg-surface-container-low flex flex-col">
+<span class="font-label-sm text-label-sm text-text-secondary">Kasi Pemerintahan</span>
+<span class="font-body-sm text-body-sm font-semibold text-text-primary">M. Wahyu Hidayat, S.AP.</span>
+</div>
+<div class="p-2.5 rounded-[8px] bg-surface-container-low flex flex-col">
+<span class="font-label-sm text-label-sm text-text-secondary">Kasi Kesejahteraan (Pembangunan)</span>
+<span class="font-body-sm text-body-sm font-semibold text-text-primary">Irwan Santoso</span>
+</div>
+<div class="p-2.5 rounded-[8px] bg-surface-container-low flex flex-col">
+<span class="font-label-sm text-label-sm text-text-secondary">Kasi Pelayanan Umum</span>
+<span class="font-body-sm text-body-sm font-semibold text-text-primary">Dewi Lestari, A.Md.</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Level 4: Unsur Kewilayahan (Kepala Dusun / Kasun) -->
+<div class="bg-surface-card p-4 rounded-[12px] shadow-sm flex flex-col gap-2.5">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm font-bold text-text-primary uppercase tracking-wider">Unsur Kewilayahan (4 Kepala Dusun / Kasun)</span>
+<span class="font-label-sm text-label-sm text-text-secondary">Pelaksana Teritorial</span>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-2 pt-1">
+<div class="p-2 rounded-[8px] bg-surface-container-low text-center">
+<span class="font-label-sm text-label-sm text-text-secondary block">Kasun Krajan</span>
+<span class="font-body-sm text-body-sm font-semibold text-text-primary truncate block">Agus Setiawan</span>
+</div>
+<div class="p-2 rounded-[8px] bg-surface-container-low text-center">
+<span class="font-label-sm text-label-sm text-text-secondary block">Kasun Gendingan Kidul</span>
+<span class="font-body-sm text-body-sm font-semibold text-text-primary truncate block">Surya Darmawan</span>
+</div>
+<div class="p-2 rounded-[8px] bg-surface-container-low text-center">
+<span class="font-label-sm text-label-sm text-text-secondary block">Kasun Ngemplak</span>
+<span class="font-body-sm text-body-sm font-semibold text-text-primary truncate block">Purnomo Sidik</span>
+</div>
+<div class="p-2 rounded-[8px] bg-surface-container-low text-center">
+<span class="font-label-sm text-label-sm text-text-secondary block">Kasun Karangtengah</span>
+<span class="font-body-sm text-body-sm font-semibold text-text-primary truncate block">Nanang Qosim</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom Notice -->
+<div class="mt-4 flex items-center gap-2 text-text-secondary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-tertiary">info</span>
+<span>Seluruh aparatur pemerintah desa telah menandatangani Pakta Integritas Pelayanan Publik Bebas Pungli.</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 3. SECTION B — DIREKTORI PERANGKAT DESA (FILTERABLE 4-COLUMN GRID) -->
+<section class="scroll-mt-28 w-full bg-surface rounded-[24px] p-6 sm:p-10 lg:p-12 flex flex-col gap-8 shadow-sm" id="perangkat">
+<div class="flex flex-col items-center text-center max-w-2xl mx-auto gap-3">
+<span class="text-tertiary font-label-sm text-label-sm font-semibold tracking-wider uppercase">Pelayan Masyarakat Desa</span>
+<h2 class="font-h2 text-h2 text-text-primary">Jajaran Perangkat Desa</h2>
+<p class="font-body-md text-body-md text-text-secondary">
+          Aparatur pelaksana teknis, sekretariat, dan kepala kewilayahan dusun yang berdedikasi menjaga kualitas administrasi dan pelayanan warga.
+        </p>
+</div>
+<!-- Filter Pills Row -->
+<div class="flex flex-wrap items-center justify-center gap-2" id="apparatus-filters">
+<button class="filter-btn px-5 py-2 rounded-full bg-primary text-on-primary font-label-md text-label-md font-semibold transition-all shadow-sm" data-filter="all" type="button">
+          Semua Perangkat (11)
+        </button>
+<button class="filter-btn px-5 py-2 rounded-full bg-surface-card text-text-secondary hover:text-text-primary hover:bg-surface-container font-label-md text-label-md transition-all" data-filter="sekretariat" type="button">
+          Sekretariat Desa (4)
+        </button>
+<button class="filter-btn px-5 py-2 rounded-full bg-surface-card text-text-secondary hover:text-text-primary hover:bg-surface-container font-label-md text-label-md transition-all" data-filter="kasi" type="button">
+          Pelaksana Teknis / Kasi (3)
+        </button>
+<button class="filter-btn px-5 py-2 rounded-full bg-surface-card text-text-secondary hover:text-text-primary hover:bg-surface-container font-label-md text-label-md transition-all" data-filter="kasun" type="button">
+          Kepala Dusun / Kasun (4)
+        </button>
+</div>
+<!-- 8 Representative Apparatus Cards (4 cols x 2 rows) -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6" id="apparatus-grid">
+<!-- 1. Sekretaris Desa -->
+<div class="apparatus-card bg-surface-card rounded-[16px] p-5 flex flex-col justify-between shadow-[0_4px_20px_rgba(0,0,0,0.04)] hover:-translate-y-1 hover:shadow-[0_8px_28px_rgba(0,0,0,0.07)] transition-all" data-category="sekretariat">
+<div class="flex flex-col gap-4">
+<div class="w-full aspect-square rounded-[12px] overflow-hidden bg-surface-container relative">
+<img class="w-full h-full object-cover" data-alt="Square portrait of Indonesian male civil servant Sekretaris Desa wearing khaki ASN uniform, smart friendly demeanor, clean office background with Indonesian flags, natural light." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCwIWbYNIxB6czqzUcoNr658vfhCEoslkHyzES7vrjiSeUJvaCIcLW8I9tg3PtZLt5pwjQVeCri4ZO--WUTVB3Gdl3X2dGE6xLRvpUOcCI6ZVqTv890JMym0uG-ZHxfjyb8p1Ecfiln7bQVmsG1ewgP9pb7OnBvhSs9IGep6C6E4DcsKfpvFRiU1z7CeaYiaFmzH8Ma1QYF5KVZrfXBnN7d01ERquEZsdSIu04I6CI"/>
+<span class="absolute top-3 left-3 px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold">
+                Sekretariat
+              </span>
+</div>
+<div class="flex flex-col">
+<span class="text-tertiary font-label-sm text-label-sm font-semibold">Sekretaris Desa</span>
+<h3 class="font-h3 text-h3 text-text-primary">Drs. Bambang Wijaya</h3>
+<p class="font-body-sm text-body-sm text-text-secondary mt-1">Koordinator Sekretariat, Arsip Desa &amp; Administrasi Umum</p>
+</div>
+</div>
+<div class="pt-4 mt-4 flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-text-secondary tabular-nums">NIPD. 19780210...</span>
+<a class="inline-flex items-center gap-1 font-label-sm text-label-sm font-semibold text-tertiary hover:text-primary transition-colors" href="#">
+<span>Tupoksi</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</a>
+</div>
+</div>
+<!-- 2. Kaur Keuangan -->
+<div class="apparatus-card bg-surface-card rounded-[16px] p-5 flex flex-col justify-between shadow-[0_4px_20px_rgba(0,0,0,0.04)] hover:-translate-y-1 hover:shadow-[0_8px_28px_rgba(0,0,0,0.07)] transition-all" data-category="sekretariat">
+<div class="flex flex-col gap-4">
+<div class="w-full aspect-square rounded-[12px] overflow-hidden bg-surface-container relative">
+<img class="w-full h-full object-cover" data-alt="Square professional headshot of Indonesian female village apparatus in modern hijab and ASN uniform, smiling warmly, holding financial folder in bright village office." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrVrraa4DKFBh_nKTuNWQWqeFwe3SXFIzp61lLcPwGqWX24xKzI_ZFbDZEgTb7If8Lvq8laNSqBXUxmwAQ165qLlG_md7gqKJhQlNVLyPqGQ8Vg0tnlDXS96azjXkOjLVrf8D98AsryIFVJrw-oE0659KOcKKsDxq8YbRiVW1a8sLhzwBW_RfBO8RgAQx12pgm32-oEC6mc8uZpgZkaNgjOf1aRVSgR0AutpPlduY"/>
+<span class="absolute top-3 left-3 px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold">
+                Sekretariat
+              </span>
+</div>
+<div class="flex flex-col">
+<span class="text-tertiary font-label-sm text-label-sm font-semibold">Kaur Keuangan</span>
+<h3 class="font-h3 text-h3 text-text-primary">Siti Aminah, S.E.</h3>
+<p class="font-body-sm text-body-sm text-text-secondary mt-1">Pengelolaan Kas, APBDes, Siskeudes &amp; Penatausahaan Dana</p>
+</div>
+</div>
+<div class="pt-4 mt-4 flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-text-secondary tabular-nums">NIPD. 19850614...</span>
+<a class="inline-flex items-center gap-1 font-label-sm text-label-sm font-semibold text-tertiary hover:text-primary transition-colors" href="#">
+<span>Tupoksi</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</a>
+</div>
+</div>
+<!-- 3. Kaur Perencanaan -->
+<div class="apparatus-card bg-surface-card rounded-[16px] p-5 flex flex-col justify-between shadow-[0_4px_20px_rgba(0,0,0,0.04)] hover:-translate-y-1 hover:shadow-[0_8px_28px_rgba(0,0,0,0.07)] transition-all" data-category="sekretariat">
+<div class="flex flex-col gap-4">
+<div class="w-full aspect-square rounded-[12px] overflow-hidden bg-surface-container relative">
+<img class="w-full h-full object-cover" data-alt="Square portrait of young Indonesian professional man wearing glasses and batik apparatus uniform, technological background with laptop, vibrant lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBw7UYYuj_60G645HlEQFBSt6pLYv0sGLzyJElcHpknR_ouQNljEcJkJ61kt0S8db54PmueUhFQRq3o7Udmlld5PinXynGhLB_M-RezWuMwZIfAq0N8DroW9maZkASI2yOg_aiI7vJT7tspSyBOQeT0wtGQQoLdppWVEuiAjLbnXrnqxpk1O62PvCKO-38Icu51MWQKPofNkHXBJuXaL84K0QAaKklPn9AyaO_Ok7Q"/>
+<span class="absolute top-3 left-3 px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold">
+                Sekretariat
+              </span>
+</div>
+<div class="flex flex-col">
+<span class="text-tertiary font-label-sm text-label-sm font-semibold">Kaur Perencanaan</span>
+<h3 class="font-h3 text-h3 text-text-primary">Rizky Pratama, S.Kom.</h3>
+<p class="font-body-sm text-body-sm text-text-secondary mt-1">Penyusunan RKPDes, RPJMDes &amp; Pengelolaan SID Digital</p>
+</div>
+</div>
+<div class="pt-4 mt-4 flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-text-secondary tabular-nums">NIPD. 19910405...</span>
+<a class="inline-flex items-center gap-1 font-label-sm text-label-sm font-semibold text-tertiary hover:text-primary transition-colors" href="#">
+<span>Tupoksi</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</a>
+</div>
+</div>
+<!-- 4. Kaur TU & Umum -->
+<div class="apparatus-card bg-surface-card rounded-[16px] p-5 flex flex-col justify-between shadow-[0_4px_20px_rgba(0,0,0,0.04)] hover:-translate-y-1 hover:shadow-[0_8px_28px_rgba(0,0,0,0.07)] transition-all" data-category="sekretariat">
+<div class="flex flex-col gap-4">
+<div class="w-full aspect-square rounded-[12px] overflow-hidden bg-surface-container relative">
+<img class="w-full h-full object-cover" data-alt="Square portrait of mature Indonesian man in civil service apparatus uniform, friendly expression, well-ordered municipal archive shelves background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCe_WLxxvjSySEVlSTYzaMvocdwWblwkgatrnB6tOAAIdf1YxbxTPilso0l5AL5twgyQwD2qNcE29cjc8I54MylzVOaXRv9UaVFmto9x1ZtxVmR-RHZcl-NgZDpPULr-qnL_2bQ_2Gq5Kt8VcX_DuE4hxirYiR23eL6maI40or6F-ZEsqLZ3fPx_CW2dRT1ymMRrf31_GWERNCOGMjT0teQxV6Y-niNofv1ehPf1pA"/>
+<span class="absolute top-3 left-3 px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold">
+                Sekretariat
+              </span>
+</div>
+<div class="flex flex-col">
+<span class="text-tertiary font-label-sm text-label-sm font-semibold">Kaur TU &amp; Umum</span>
+<h3 class="font-h3 text-h3 text-text-primary">Hendro Susilo</h3>
+<p class="font-body-sm text-body-sm text-text-secondary mt-1">Ketatausahaan, Buku Ekspedisi, Logistik &amp; Aset Inventaris</p>
+</div>
+</div>
+<div class="pt-4 mt-4 flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-text-secondary tabular-nums">NIPD. 19800722...</span>
+<a class="inline-flex items-center gap-1 font-label-sm text-label-sm font-semibold text-tertiary hover:text-primary transition-colors" href="#">
+<span>Tupoksi</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</a>
+</div>
+</div>
+<!-- 5. Kasi Pemerintahan -->
+<div class="apparatus-card bg-surface-card rounded-[16px] p-5 flex flex-col justify-between shadow-[0_4px_20px_rgba(0,0,0,0.04)] hover:-translate-y-1 hover:shadow-[0_8px_28px_rgba(0,0,0,0.07)] transition-all" data-category="kasi">
+<div class="flex flex-col gap-4">
+<div class="w-full aspect-square rounded-[12px] overflow-hidden bg-surface-container relative">
+<img class="w-full h-full object-cover" data-alt="Square portrait of Indonesian male officer Kasi Pemerintahan in neat formal uniform, confident and approachable, clean council room backdrop." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA25JLUJSWwdrKox1XR8Pg_rwrFOqQ1_OxzhphyDvXIeLRFgrHL_bfufbVNkmdhuwrvcj_UtdXkRXVlrCnzz-mWlVoIMlfN5dYKpnvBJAhNZfP2BVVefFUfpgsnrU0F6BKZstVkClWCtwJ1BSDhl8ufL3qy1p1URi_QFhdwPZssebGWpdZy4xCQjw8gU4E536gDRnLAAwcOhSv-D-bECPXqi0tm-Z8z3syJNO-p2CQ"/>
+<span class="absolute top-3 left-3 px-3 py-1 rounded-full bg-primary-container text-on-primary-container font-label-sm text-label-sm font-semibold">
+                Pelaksana Teknis
+              </span>
+</div>
+<div class="flex flex-col">
+<span class="text-tertiary font-label-sm text-label-sm font-semibold">Kasi Pemerintahan</span>
+<h3 class="font-h3 text-h3 text-text-primary">M. Wahyu Hidayat, S.AP.</h3>
+<p class="font-body-sm text-body-sm text-text-secondary mt-1">Administrasi Kependudukan, Pembinaan RT/RW &amp; Pertanahan</p>
+</div>
+</div>
+<div class="pt-4 mt-4 flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-text-secondary tabular-nums">NIPD. 19871120...</span>
+<a class="inline-flex items-center gap-1 font-label-sm text-label-sm font-semibold text-tertiary hover:text-primary transition-colors" href="#">
+<span>Tupoksi</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</a>
+</div>
+</div>
+<!-- 6. Kasi Pelayanan -->
+<div class="apparatus-card bg-surface-card rounded-[16px] p-5 flex flex-col justify-between shadow-[0_4px_20px_rgba(0,0,0,0.04)] hover:-translate-y-1 hover:shadow-[0_8px_28px_rgba(0,0,0,0.07)] transition-all" data-category="kasi">
+<div class="flex flex-col gap-4">
+<div class="w-full aspect-square rounded-[12px] overflow-hidden bg-surface-container relative">
+<img class="w-full h-full object-cover" data-alt="Square portrait of Indonesian female civil servant with cheerful smile wearing green patterned scarf, welcoming front desk public service counter." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAjpieebhGgemqjk82yP9o91R4P026SKxpSxU3N4AQzVldkCV0RCtiuRAkEW3CixSbODuIQaoj5_7vq0XqZxnNBfM25JmMp4rvpvPDZ08JX674Xr5l3QX4sBpr7lVICqSp7BV3PlPeyK-_vf42tXKep9Shrt6kY_00mECDxqRrLg90cX2eDE8y4bb2rLvln_pUm-Xkpo2rJQTO6vJku4jdexP572v1_01YqyBeGZxI"/>
+<span class="absolute top-3 left-3 px-3 py-1 rounded-full bg-primary-container text-on-primary-container font-label-sm text-label-sm font-semibold">
+                Pelaksana Teknis
+              </span>
+</div>
+<div class="flex flex-col">
+<span class="text-tertiary font-label-sm text-label-sm font-semibold">Kasi Pelayanan</span>
+<h3 class="font-h3 text-h3 text-text-primary">Dewi Lestari, A.Md.</h3>
+<p class="font-body-sm text-body-sm text-text-secondary mt-1">Layanan Surat Cepat, Jaminan Sosial, Kesehatan &amp; Nikah/Rujuk</p>
+</div>
+</div>
+<div class="pt-4 mt-4 flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-text-secondary tabular-nums">NIPD. 19930318...</span>
+<a class="inline-flex items-center gap-1 font-label-sm text-label-sm font-semibold text-tertiary hover:text-primary transition-colors" href="#">
+<span>Tupoksi</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</a>
+</div>
+</div>
+<!-- 7. Kasun Krajan -->
+<div class="apparatus-card bg-surface-card rounded-[16px] p-5 flex flex-col justify-between shadow-[0_4px_20px_rgba(0,0,0,0.04)] hover:-translate-y-1 hover:shadow-[0_8px_28px_rgba(0,0,0,0.07)] transition-all" data-category="kasun">
+<div class="flex flex-col gap-4">
+<div class="w-full aspect-square rounded-[12px] overflow-hidden bg-surface-container relative">
+<img class="w-full h-full object-cover" data-alt="Square portrait of middle-aged Indonesian male Kepala Dusun dressed in smart casual village apparatus shirt, standing near lush agricultural field." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQgPVBsnpAAiDgr_MoGe7S4LI1lM2-CzDA9F3Dek-D8l723RGaAFHIIxufw8AY40b8jZ0plFwQ46QadNXZSAH9qH2dXJJygMup75YsBFGHXniE7no3EzMr2kaX4PEg2RIwdfXE9aFNWOk6K1STuBflPIU6jdmKtlKBRveB3r2Fsgu3086B1dPvcaYQnB0Uoc7iAZVVViZntjtWN7sBKe3zFiCutmohVqYc4y0_apo"/>
+<span class="absolute top-3 left-3 px-3 py-1 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm font-semibold">
+                Kewilayahan
+              </span>
+</div>
+<div class="flex flex-col">
+<span class="text-tertiary font-label-sm text-label-sm font-semibold">Kasun Krajan</span>
+<h3 class="font-h3 text-h3 text-text-primary">Agus Setiawan</h3>
+<p class="font-body-sm text-body-sm text-text-secondary mt-1">Kewilayahan Dusun Krajan membina 6 RT / 2 RW &amp; Kamtibmas</p>
+</div>
+</div>
+<div class="pt-4 mt-4 flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-text-secondary tabular-nums">NIPD. 19820901...</span>
+<a class="inline-flex items-center gap-1 font-label-sm text-label-sm font-semibold text-tertiary hover:text-primary transition-colors" href="#">
+<span>Kontak</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</a>
+</div>
+</div>
+<!-- 8. Kasun Gendingan Kidul -->
+<div class="apparatus-card bg-surface-card rounded-[16px] p-5 flex flex-col justify-between shadow-[0_4px_20px_rgba(0,0,0,0.04)] hover:-translate-y-1 hover:shadow-[0_8px_28px_rgba(0,0,0,0.07)] transition-all" data-category="kasun">
+<div class="flex flex-col gap-4">
+<div class="w-full aspect-square rounded-[12px] overflow-hidden bg-surface-container relative">
+<img class="w-full h-full object-cover" data-alt="Square portrait of an approachable Indonesian male hamlet head Kasun smiling outdoors with community gazebo background, natural daylight." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQho6COrisMZhd9lhaypjf49NT73xWD6-UU9GL6zssqbKGA64aUuALEZhG5SgEcpW_5VJYbmBikjFD-m-4PF3u-YTPg66YjszkpQtgv0ST33W_NlKjdhcHx1q8iOXqpET0GgvjVWg0PUqqToq3OGSXLgpYSnpqA9S1YxwqZ8U-TkymPqemDJ9lCIVqx6ePxniORdKf6pTdABmY8a-HMdKbBYfWX_OBF5EDV40I9YY"/>
+<span class="absolute top-3 left-3 px-3 py-1 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm font-semibold">
+                Kewilayahan
+              </span>
+</div>
+<div class="flex flex-col">
+<span class="text-tertiary font-label-sm text-label-sm font-semibold">Kasun Gendingan Kidul</span>
+<h3 class="font-h3 text-h3 text-text-primary">Surya Darmawan</h3>
+<p class="font-body-sm text-body-sm text-text-secondary mt-1">Kewilayahan Dusun Gendingan Kidul membina 5 RT / 2 RW &amp; Irigasi</p>
+</div>
+</div>
+<div class="pt-4 mt-4 flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-text-secondary tabular-nums">NIPD. 19890529...</span>
+<a class="inline-flex items-center gap-1 font-label-sm text-label-sm font-semibold text-tertiary hover:text-primary transition-colors" href="#">
+<span>Kontak</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Action Button Bottom -->
+<div class="flex justify-center pt-2">
+<button class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-surface-card hover:bg-surface-container text-tertiary font-label-md text-label-md font-semibold shadow-sm transition-all" type="button">
+<span>Tampilkan Seluruh Perangkat Desa (11 Aparatur Lengkap)</span>
+<span class="material-symbols-outlined text-[18px]">expand_more</span>
+</button>
+</div>
+</section>
+<!-- 4. SECTION C — BADAN PERMUSYAWARATAN DESA (BPD) ASYMMETRIC BENTO -->
+<section class="scroll-mt-28 w-full bg-surface rounded-[24px] p-6 sm:p-10 lg:p-12 flex flex-col gap-8 shadow-sm" id="bpd">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<!-- Left Column (5 cols): Narasi & 3 Fungsi BPD -->
+<div class="lg:col-span-5 bg-surface-card rounded-[16px] p-6 sm:p-8 flex flex-col gap-6 shadow-[0_4px_20px_rgba(0,0,0,0.04)]">
+<div class="flex flex-col gap-3">
+<span class="w-fit px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold">
+              Mitra Pemerintahan &amp; Wadah Aspirasi
+            </span>
+<h2 class="font-h2 text-h2 text-text-primary leading-tight">
+              Badan Permusyawaratan Desa (BPD)
+            </h2>
+<p class="font-body-md text-body-md text-text-secondary leading-relaxed">
+              Lembaga permusyawaratan desa yang berkedudukan sebagai unsur penyelenggara pemerintahan desa. BPD menyerap, menampung, menyalurkan aspirasi warga serta mengawasi efektivitas pelaksanaan APBDes secara independen.
+            </p>
+</div>
+<!-- 3 Key Functions -->
+<div class="flex flex-col gap-3.5 pt-2">
+<!-- Row 1 -->
+<div class="p-3.5 rounded-[12px] bg-surface-container-low flex items-start gap-3.5">
+<div class="w-10 h-10 rounded-full bg-tertiary/10 text-tertiary flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[20px]">assignment_turned_in</span>
+</div>
+<div class="flex flex-col">
+<h3 class="font-label-lg text-label-lg font-bold text-text-primary">Fungsi Legislasi Desa</h3>
+<p class="font-body-sm text-body-sm text-text-secondary">Membahas dan menyepakati Rancangan Peraturan Desa (Perdes) bersama Kepala Desa.</p>
+</div>
+</div>
+<!-- Row 2 -->
+<div class="p-3.5 rounded-[12px] bg-surface-container-low flex items-start gap-3.5">
+<div class="w-10 h-10 rounded-full bg-tertiary/10 text-tertiary flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[20px]">volunteer_activism</span>
+</div>
+<div class="flex flex-col">
+<h3 class="font-label-lg text-label-lg font-bold text-text-primary">Penampung &amp; Penyalur Aspirasi</h3>
+<p class="font-body-sm text-body-sm text-text-secondary">Melakukan musyawarah dusun dan menjamin keterwakilan hak suara perempuan serta kelompok rentan.</p>
+</div>
+</div>
+<!-- Row 3 -->
+<div class="p-3.5 rounded-[12px] bg-surface-container-low flex items-start gap-3.5">
+<div class="w-10 h-10 rounded-full bg-tertiary/10 text-tertiary flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[20px]">visibility</span>
+</div>
+<div class="flex flex-col">
+<h3 class="font-label-lg text-label-lg font-bold text-text-primary">Pengawasan Kinerja Pemdes</h3>
+<p class="font-body-sm text-body-sm text-text-secondary">Mengevaluasi laporan pertanggungjawaban Kepala Desa, RPJMDes, dan realisasi anggaran APBDes.</p>
+</div>
+</div>
+</div>
+<!-- Bottom Contact Pill -->
+<div class="pt-2">
+<a class="w-full inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-full bg-secondary-container hover:bg-secondary-fixed text-on-secondary-container font-label-md text-label-md font-semibold transition-colors" href="#">
+<span class="material-symbols-outlined text-[18px]">outgoing_mail</span>
+<span>Sampaikan Aspirasi Langsung ke BPD</span>
+</a>
+</div>
+</div>
+<!-- Right Column (7 cols): Struktur Pimpinan & Bidang Kerja BPD -->
+<div class="lg:col-span-7 flex flex-col gap-6">
+<!-- Top Highlight Card: Pimpinan BPD -->
+<div class="bg-surface-card rounded-[16px] p-6 sm:p-7 shadow-[0_4px_20px_rgba(0,0,0,0.04)] flex flex-col gap-5">
+<div class="flex flex-wrap items-center justify-between gap-2 pb-2">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-tertiary font-semibold uppercase tracking-wider">Unsur Pimpinan</span>
+<h3 class="font-h3 text-h3 text-text-primary">Pimpinan Kolektif BPD Gendingan</h3>
+</div>
+<span class="px-3 py-1 rounded-full bg-surface-container text-text-secondary font-label-sm text-label-sm font-semibold tabular-nums">
+                Periode 2021–2027
+              </span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+<!-- Ketua -->
+<div class="p-4 rounded-[12px] bg-surface-container-low flex flex-col gap-2">
+<span class="font-label-sm text-label-sm text-tertiary font-bold uppercase">Ketua BPD</span>
+<span class="font-headline-sm text-headline-sm font-bold text-text-primary">Drs. H. Mulyono</span>
+<p class="font-body-sm text-body-sm text-text-secondary">Koordinator Utama &amp; Juru Bicara Kelembagaan BPD</p>
+</div>
+<!-- Wakil Ketua -->
+<div class="p-4 rounded-[12px] bg-surface-container-low flex flex-col gap-2">
+<span class="font-label-sm text-label-sm text-tertiary font-bold uppercase">Wakil Ketua</span>
+<span class="font-headline-sm text-headline-sm font-bold text-text-primary">Sulistyo Hadi</span>
+<p class="font-body-sm text-body-sm text-text-secondary">Koordinator Bidang Pemerintahan &amp; Hukum Adat</p>
+</div>
+<!-- Sekretaris -->
+<div class="p-4 rounded-[12px] bg-surface-container-low flex flex-col gap-2">
+<span class="font-label-sm text-label-sm text-tertiary font-bold uppercase">Sekretaris</span>
+<span class="font-headline-sm text-headline-sm font-bold text-text-primary">Ratna Sari, S.Pd.</span>
+<p class="font-body-sm text-body-sm text-text-secondary">Administrasi Notula Sidang &amp; Registrasi Aspirasi</p>
+</div>
+</div>
+</div>
+<!-- Bottom 2 Cards (Bidang Kerja) -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Card Bidang 1 -->
+<div class="bg-surface-card rounded-[16px] p-6 shadow-[0_4px_20px_rgba(0,0,0,0.04)] flex flex-col justify-between gap-4">
+<div class="flex flex-col gap-2">
+<div class="w-9 h-9 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">domain</span>
+</div>
+<h3 class="font-label-lg text-label-lg font-bold text-text-primary">
+                  Bidang Penyelenggaraan Pemerintahan &amp; Pembangunan
+                </h3>
+<p class="font-body-sm text-body-sm text-text-secondary leading-relaxed">
+                  Menelaah efektivitas pembangunan drainase, infrastruktur tani, sanitasi, dan layanan birokrasi perangkat desa.
+                </p>
+</div>
+<div class="pt-3 bg-surface-container-low rounded-[10px] p-3 flex items-center justify-between font-label-sm text-label-sm text-text-secondary">
+<span>Anggota Perwakilan Dusun:</span>
+<span class="font-semibold text-text-primary tabular-nums">4 Orang</span>
+</div>
+</div>
+<!-- Card Bidang 2 -->
+<div class="bg-surface-card rounded-[16px] p-6 shadow-[0_4px_20px_rgba(0,0,0,0.04)] flex flex-col justify-between gap-4">
+<div class="flex flex-col gap-2">
+<div class="w-9 h-9 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">diversity_1</span>
+</div>
+<h3 class="font-label-lg text-label-lg font-bold text-text-primary">
+                  Bidang Kemasyarakatan &amp; Keterwakilan Perempuan
+                </h3>
+<p class="font-body-sm text-body-sm text-text-secondary leading-relaxed">
+                  Memastikan program pemberdayaan UMKM wanita, penurunan angka stunting balita, serta keharmonisan sosial warga.
+                </p>
+</div>
+<div class="pt-3 bg-surface-container-low rounded-[10px] p-3 flex items-center justify-between font-label-sm text-label-sm text-text-secondary">
+<span>Pokja Aspirasi Khusus:</span>
+<span class="font-semibold text-text-primary tabular-nums">3 Orang</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. SECTION D — LEMBAGA KEMASYARAKATAN & MITRA DESA (3x2 BENTO GRID) -->
+<section class="scroll-mt-28 w-full bg-surface rounded-[24px] p-6 sm:p-10 lg:p-12 flex flex-col gap-8 shadow-sm" id="lembaga">
+<div class="flex flex-col items-center text-center max-w-2xl mx-auto gap-3">
+<span class="text-tertiary font-label-sm text-label-sm font-semibold tracking-wider uppercase">Gotong Royong &amp; Partisipasi Warga</span>
+<h2 class="font-h2 text-h2 text-text-primary">Lembaga Kemasyarakatan Desa (LKD)</h2>
+<p class="font-body-md text-body-md text-text-secondary">
+          Sinergi kelembagaan warga dalam mendukung percepatan pembangunan, pemberdayaan ekonomi keluarga, pemuda, dan ketenteraman lingkungan.
+        </p>
+</div>
+<!-- 3x2 Bento Grid of White Cards -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- 1. LPMD -->
+<div class="bg-surface-card rounded-[16px] p-6 flex flex-col justify-between shadow-[0_4px_20px_rgba(0,0,0,0.04)] hover:-translate-y-1 hover:shadow-[0_8px_28px_rgba(0,0,0,0.07)] transition-all">
+<div class="flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[24px]">construction</span>
+</div>
+<span class="px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-bold">
+                LPMD
+              </span>
+</div>
+<div class="flex flex-col gap-1">
+<h3 class="font-h3 text-h3 text-text-primary">Lembaga Pemberdayaan Masyarakat Desa</h3>
+<p class="font-body-sm text-body-sm text-text-secondary mt-1 leading-relaxed">
+                Mitra perencana dan penggerak swadaya gotong royong warga dalam pembangunan fisik sarana tani, rabat jalan, dan jembatan dusun.
+              </p>
+</div>
+</div>
+<div class="mt-6 pt-4 bg-surface-container-low rounded-[10px] p-3 flex items-center justify-between font-label-sm text-label-sm text-text-secondary">
+<span>Ketua: Ir. Suwandi</span>
+<span class="font-semibold text-text-primary tabular-nums">12 Pengurus</span>
+</div>
+</div>
+<!-- 2. TP-PKK -->
+<div class="bg-surface-card rounded-[16px] p-6 flex flex-col justify-between shadow-[0_4px_20px_rgba(0,0,0,0.04)] hover:-translate-y-1 hover:shadow-[0_8px_28px_rgba(0,0,0,0.07)] transition-all">
+<div class="flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[24px]">favorite</span>
+</div>
+<span class="px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-bold">
+                TP-PKK
+              </span>
+</div>
+<div class="flex flex-col gap-1">
+<h3 class="font-h3 text-h3 text-text-primary">Tim Penggerak PKK Desa</h3>
+<p class="font-body-sm text-body-sm text-text-secondary mt-1 leading-relaxed">
+                Pemberdayaan kesejahteraan keluarga melalui 10 Program Pokok PKK, Posyandu balita &amp; lansia, serta ketahanan pangan dasawisma.
+              </p>
+</div>
+</div>
+<div class="mt-6 pt-4 bg-surface-container-low rounded-[10px] p-3 flex items-center justify-between font-label-sm text-label-sm text-text-secondary">
+<span>Ketua: Ny. Hj. Sri Wahyuni</span>
+<span class="font-semibold text-text-primary tabular-nums">40+ Kader Aktif</span>
+</div>
+</div>
+<!-- 3. Karang Taruna -->
+<div class="bg-surface-card rounded-[16px] p-6 flex flex-col justify-between shadow-[0_4px_20px_rgba(0,0,0,0.04)] hover:-translate-y-1 hover:shadow-[0_8px_28px_rgba(0,0,0,0.07)] transition-all">
+<div class="flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[24px]">local_fire_department</span>
+</div>
+<span class="px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-bold">
+                Karang Taruna
+              </span>
+</div>
+<div class="flex flex-col gap-1">
+<h3 class="font-h3 text-h3 text-text-primary">Karang Taruna “Tunas Muda”</h3>
+<p class="font-body-sm text-body-sm text-text-secondary mt-1 leading-relaxed">
+                Wadah kreativitas pemuda generasi produktif, turnamen olahraga antar-dusun, relawan bencana, dan digitalisasi promosi potensi desa.
+              </p>
+</div>
+</div>
+<div class="mt-6 pt-4 bg-surface-container-low rounded-[10px] p-3 flex items-center justify-between font-label-sm text-label-sm text-text-secondary">
+<span>Ketua: Bagus Prakoso</span>
+<span class="font-semibold text-text-primary tabular-nums">65 Pemuda</span>
+</div>
+</div>
+<!-- 4. BUMDes -->
+<div class="bg-surface-card rounded-[16px] p-6 flex flex-col justify-between shadow-[0_4px_20px_rgba(0,0,0,0.04)] hover:-translate-y-1 hover:shadow-[0_8px_28px_rgba(0,0,0,0.07)] transition-all">
+<div class="flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[24px]">storefront</span>
+</div>
+<span class="px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-bold">
+                BUMDes
+              </span>
+</div>
+<div class="flex flex-col gap-1">
+<h3 class="font-h3 text-h3 text-text-primary">BUMDes “Maju Bersama”</h3>
+<p class="font-body-sm text-body-sm text-text-secondary mt-1 leading-relaxed">
+                Lokomotif ekonomi desa melalui unit pengelolaan air bersih (PAMDes), kemitraan pupuk bersubsidi, dan galeri produk olahan UMKM.
+              </p>
+</div>
+</div>
+<div class="mt-6 pt-4 bg-surface-container-low rounded-[10px] p-3 flex items-center justify-between font-label-sm text-label-sm text-text-secondary">
+<span>Direktur: Eko Prasetyo, S.E.</span>
+<span class="font-semibold text-text-primary tabular-nums">3 Unit Usaha</span>
+</div>
+</div>
+<!-- 5. RT / RW -->
+<div class="bg-surface-card rounded-[16px] p-6 flex flex-col justify-between shadow-[0_4px_20px_rgba(0,0,0,0.04)] hover:-translate-y-1 hover:shadow-[0_8px_28px_rgba(0,0,0,0.07)] transition-all">
+<div class="flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[24px]">hub</span>
+</div>
+<span class="px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-bold">
+                RT / RW
+              </span>
+</div>
+<div class="flex flex-col gap-1">
+<h3 class="font-h3 text-h3 text-text-primary">Rukun Tetangga &amp; Rukun Warga</h3>
+<p class="font-body-sm text-body-sm text-text-secondary mt-1 leading-relaxed">
+                Ujung tombak pelayanan pengantar administrasi kependudukan, kerukunan hidup bertetangga, ronda malam, dan pemutakhiran data warga.
+              </p>
+</div>
+</div>
+<div class="mt-6 pt-4 bg-surface-container-low rounded-[10px] p-3 flex items-center justify-between font-label-sm text-label-sm text-text-secondary">
+<span>Koord: Forum Komunikasi RT/RW</span>
+<span class="font-semibold text-text-primary tabular-nums">6 RW • 19 RT</span>
+</div>
+</div>
+<!-- 6. Satlinmas & Tiga Pilar -->
+<div class="bg-surface-card rounded-[16px] p-6 flex flex-col justify-between shadow-[0_4px_20px_rgba(0,0,0,0.04)] hover:-translate-y-1 hover:shadow-[0_8px_28px_rgba(0,0,0,0.07)] transition-all">
+<div class="flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[24px]">security</span>
+</div>
+<span class="px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-bold">
+                Tiga Pilar
+              </span>
+</div>
+<div class="flex flex-col gap-1">
+<h3 class="font-h3 text-h3 text-text-primary">Satlinmas &amp; Tiga Pilar Desa</h3>
+<p class="font-body-sm text-body-sm text-text-secondary mt-1 leading-relaxed">
+                Sinergitas Kepala Desa bersama Babinsa (TNI), Bhabinkamtibmas (Polri), serta anggota Satuan Perlindungan Masyarakat dalam memelihara ketertiban.
+              </p>
+</div>
+</div>
+<div class="mt-6 pt-4 bg-surface-container-low rounded-[10px] p-3 flex items-center justify-between font-label-sm text-label-sm text-text-secondary">
+<span>Koordinator Linmas: Sujatmiko</span>
+<span class="font-semibold text-text-primary tabular-nums">30 Personel</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 6. PRE-FOOTER CALLOUT: MAKLUMAT PELAYANAN BALAI DESA -->
+<section class="w-full rounded-[24px] bg-[#1E2E22] text-surface-container-lowest p-8 sm:p-12 lg:p-14 relative overflow-hidden shadow-md">
+<!-- Decorative Organic Radial Glow -->
+<div class="absolute -right-20 -bottom-20 w-80 h-80 rounded-full bg-primary/20 blur-3xl pointer-events-none"></div>
+<div class="absolute -left-20 -top-20 w-72 h-72 rounded-full bg-primary-fixed/10 blur-3xl pointer-events-none"></div>
+<div class="relative z-10 max-w-3xl mx-auto flex flex-col items-center text-center gap-6">
+<div class="w-12 h-12 rounded-full bg-primary-container flex items-center justify-center text-on-primary-container shadow-sm">
+<span class="material-symbols-outlined text-[26px]">gavel</span>
+</div>
+<div class="flex flex-col gap-3">
+<span class="text-primary-fixed font-label-sm text-label-sm font-semibold tracking-wider uppercase">Maklumat Standar Pelayanan</span>
+<h2 class="font-h2 text-h2 text-surface-container-lowest leading-tight">
+            Komitmen Pelayanan Publik Prima Balai Desa
+          </h2>
+<p class="font-body-lg text-body-lg text-surface-container-high/90 leading-relaxed text-balance">
+            Kantor Pemerintah Desa Gendingan buka setiap hari <strong>Senin s.d. Jumat pukul 08.00–15.00 WIB</strong>. Seluruh pengurusan surat pengantar administrasi kependudukan (KTP, KK, SKCK, Kelahiran, Kematian, Pindah) diselenggarakan <strong>100% Bebas Biaya (Gratis)</strong>.
+          </p>
+</div>
+<!-- 2 Action Buttons -->
+<div class="flex flex-wrap items-center justify-center gap-4 pt-2">
+<a class="px-7 py-3 rounded-full bg-primary-container hover:bg-primary text-on-primary-container hover:text-on-primary font-label-md text-label-md font-bold transition-all shadow-md flex items-center gap-2" data-path="layanan-desa" href="#">
+<span>Ajukan Layanan Surat Online Mandiri</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+<a class="px-7 py-3 rounded-full bg-surface-card hover:bg-surface-container-low text-text-primary font-label-md text-label-md font-semibold transition-all shadow-sm flex items-center gap-2" data-path="data-dan-transparansi" href="#">
+<span class="material-symbols-outlined text-[18px]">bar_chart</span>
+<span>Lihat Data &amp; Transparansi APBDes</span>
+</a>
+</div>
+<!-- Direct Contact Info Banner -->
+<div class="pt-4 flex flex-wrap items-center justify-center gap-6 text-outline-variant font-body-sm text-body-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-primary-fixed">verified_user</span>
+<span>Layanan Pengaduan Respons Cepat 24 Jam</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-primary-fixed">call</span>
+<span class="tabular-nums">WhatsApp Center: 0812-3456-7890</span>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+<!-- Simple Vanilla Micro-Interaction Script for Directory Filters -->
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const filterBtns = document.querySelectorAll('#apparatus-filters .filter-btn');
+    const apparatusCards = document.querySelectorAll('#apparatus-grid .apparatus-card');
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const filter = btn.getAttribute('data-filter');
+
+        // Toggle active button style
+        filterBtns.forEach(b => {
+          b.classList.remove('bg-primary', 'text-on-primary', 'shadow-sm');
+          b.classList.add('bg-surface-card', 'text-text-secondary');
+        });
+        btn.classList.remove('bg-surface-card', 'text-text-secondary');
+        btn.classList.add('bg-primary', 'text-on-primary', 'shadow-sm');
+
+        // Filter cards
+        apparatusCards.forEach(card => {
+          const category = card.getAttribute('data-category');
+          if (filter === 'all' || category === filter) {
+            card.classList.remove('hidden');
+          } else {
+            card.classList.add('hidden');
+          }
+        });
+      });
+    });
+  });
+</script></main><footer class="w-full bg-surface-dark text-text-on-dark py-16 border-t border-[#232b25]"><div class="max-w-7xl mx-auto px-6 lg:px-12"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12"><div class="flex flex-col gap-4"><div class="flex items-center gap-3"><div class="w-9 h-9 rounded-full bg-primary-container flex items-center justify-center text-on-primary-container"><span class="material-symbols-outlined text-[20px]">account_balance</span></div><span class="font-headline-sm text-headline-sm text-surface-container-lowest leading-tight">Desa Gendingan</span></div><p class="font-body-sm text-body-sm text-outline-variant leading-relaxed">Portal Resmi Pemerintahan Desa Gendingan, Kecamatan Tulungagung, Kabupaten Tulungagung, Jawa Timur. Terintegrasi Sistem Informasi Desa (SID) dan PPID Desa.</p><div class="flex items-center gap-2 pt-2"><span class="px-3 py-1 rounded-full bg-[#1e2520] border border-[#2e3730] font-label-sm text-label-sm text-primary-fixed">PPID Siap Melayani</span></div></div><div class="flex flex-col gap-3"><span class="font-label-lg text-label-lg text-surface-container-lowest font-semibold tracking-wide uppercase">Tautan Cepat</span><div class="flex flex-col gap-2 font-body-sm text-body-sm text-outline-variant"><a class="hover:text-surface-container-lowest transition-colors" data-path="beranda" href="#">Beranda Utama</a><a class="hover:text-surface-container-lowest transition-colors" data-path="pemerintahan" href="#">Struktur Pemerintahan</a><a class="hover:text-surface-container-lowest transition-colors" data-path="layanan-desa" href="#">Layanan Surat Mandiri</a><a class="hover:text-surface-container-lowest transition-colors" data-path="potensi-desa" href="#">Potensi Pertanian &amp; UMKM</a><a class="hover:text-surface-container-lowest transition-colors" data-path="berita-dan-agenda" href="#">Kabar Desa &amp; Agenda</a></div></div><div class="flex flex-col gap-3"><span class="font-label-lg text-label-lg text-surface-container-lowest font-semibold tracking-wide uppercase">Tautan Transparansi</span><div class="flex flex-col gap-2 font-body-sm text-body-sm text-outline-variant"><a class="hover:text-surface-container-lowest transition-colors" data-path="data-dan-transparansi" href="#">Realisasi APBDes 2024</a><a class="hover:text-surface-container-lowest transition-colors" data-path="data-dan-transparansi" href="#">Laporan Penyaluran BLT-DD</a><a class="hover:text-surface-container-lowest transition-colors" data-path="data-dan-transparansi" href="#">Pembangunan Fisik Desa</a><a class="hover:text-surface-container-lowest transition-colors" data-path="data-dan-transparansi" href="#">Statistik Kependudukan</a><a class="hover:text-surface-container-lowest transition-colors" data-path="data-dan-transparansi" href="#">Regulasi &amp; Peraturan Desa</a></div></div><div class="flex flex-col gap-3"><span class="font-label-lg text-label-lg text-surface-container-lowest font-semibold tracking-wide uppercase">Kontak &amp; Jam Pelayanan</span><div class="flex flex-col gap-2 font-body-sm text-body-sm text-outline-variant"><p class="text-surface-container-high font-medium">Balai Desa Gendingan</p><p>Jl. Raya Gendingan No. 01, Tulungagung, Jawa Timur 66212</p><div class="pt-2 flex flex-col gap-1"><p class="text-surface-container-high"><span class="font-semibold">Senin - Kamis:</span> 08.00 - 15.00 WIB</p><p class="text-surface-container-high"><span class="font-semibold">Jumat:</span> 08.00 - 11.00 WIB</p><p class="text-text-secondary"><span class="font-semibold">Sabtu &amp; Minggu:</span> Tutup</p></div><div class="pt-2 flex items-center gap-2"><span class="material-symbols-outlined text-[16px] text-primary-fixed">call</span><span>(0355) 321-xxx</span></div></div></div></div><div class="mt-12 pt-8 border-t border-[#232b25] flex flex-col md:flex-row items-center justify-between gap-4 font-body-sm text-body-sm text-outline-variant"><p>© 2024 Pemerintah Desa Gendingan, Kabupaten Tulungagung. Hak Cipta Dilindungi Undang-Undang.</p><p class="font-label-sm text-label-sm text-text-secondary">Didukung oleh SID &amp; PPID Kabupaten Tulungagung</p></div></div></footer></body></html>
