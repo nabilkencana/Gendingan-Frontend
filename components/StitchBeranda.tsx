@@ -146,37 +146,37 @@ export default function StitchBeranda() {
     <div className="min-h-screen bg-surface flex flex-col font-sans">
       
       <main className="w-full pt-20 bg-surface min-h-[calc(100vh-80px)]"><div className="flex flex-col w-full">
-<div className="w-full px-8 lg:px-2xl py-6 space-y-16">
+<div className="w-full px-3.5 sm:px-6 lg:px-12 py-3 sm:py-6 space-y-8 sm:space-y-16">
 {/*  1. HERO SECTION  */}
-<section className="relative isolate w-full min-h-[580px] rounded-3xl overflow-hidden flex flex-col justify-between p-6 md:p-12 text-center text-on-primary shadow-lg">
+<section className="relative isolate w-full min-h-[500px] sm:min-h-[580px] rounded-2xl sm:rounded-3xl overflow-hidden flex flex-col justify-between p-4 sm:p-8 md:p-12 text-center text-on-primary shadow-lg">
 <div className="absolute inset-0 w-full h-full bg-cover bg-center -z-20 transition-all duration-1000 ease-in-out" style={{ backgroundImage: "url(" + HERO_PHOTOS[activePhotoIdx] + ")" }}>
 </div>
 <div className="absolute inset-0 bg-gradient-to-b from-surface-dark/75 via-surface-dark/80 to-surface-dark/95 -z-10"></div>
 <div className="pt-2"></div>
 {/*  Center Content & Search  */}
 <div className="max-w-4xl mx-auto my-auto py-4 flex flex-col items-center">
-<h1 className="font-headline-xl text-headline-xl text-on-primary mb-4 tracking-tight drop-shadow-sm max-w-3xl">
+<h1 className="font-headline-xl text-2xl sm:text-4xl md:text-headline-xl text-on-primary mb-3 sm:mb-4 tracking-tight drop-shadow-sm max-w-3xl leading-snug">
           Selamat Datang di Desa Gendingan
         </h1>
-<p className="font-body-lg text-body-lg text-on-primary/90 max-w-2xl mx-auto mb-8 leading-relaxed">
+<p className="font-body-md sm:font-body-lg text-xs sm:text-base md:text-body-lg text-on-primary/90 max-w-2xl mx-auto mb-5 sm:mb-8 leading-relaxed">
           Wujudkan Tata Kelola Desa yang Transparan, Pelayanan Publik Prima, dan Masyarakat Mandiri di Kabupaten Tulungagung.
         </p>
 {/*  Prominent Search Bar  */}
-<div className="w-full max-w-2xl bg-surface-card rounded-full p-2 pl-6 flex items-center shadow-xl mb-6 transition-all focus-within:shadow-2xl">
+<div className="w-full max-w-2xl bg-surface-card rounded-full p-1.5 sm:p-2 pl-3.5 sm:pl-6 flex items-center shadow-xl mb-5 sm:mb-6 transition-all focus-within:shadow-2xl">
 <span className="material-symbols-outlined text-text-secondary mr-2">search</span>
-<input onClick={() => setIsSearchOpen(true)} className="w-full bg-transparent font-body-sm text-body-sm text-text-primary placeholder:text-text-secondary outline-none cursor-pointer" placeholder="Cari layanan surat, transparansi APBDes, atau informasi desa... (Klik untuk mencari)" type="text" readOnly />
-<button onClick={() => setIsSearchOpen(true)} className="shrink-0 bg-primary-container hover:bg-primary-hover text-on-primary font-label-md text-label-md px-6 py-2.5 rounded-full transition flex items-center gap-1.5 shadow-sm" type="button">
+<input onClick={() => setIsSearchOpen(true)} className="w-full bg-transparent font-body-sm text-body-sm text-text-primary placeholder:text-text-secondary outline-none cursor-pointer" placeholder="Cari layanan, surat, APBDes..." type="text" readOnly />
+<button onClick={() => setIsSearchOpen(true)} className="shrink-0 bg-primary-container hover:bg-primary-hover text-on-primary font-label-md text-xs sm:text-label-md px-3.5 sm:px-6 py-1.5 sm:py-2.5 rounded-full transition flex items-center gap-1 sm:gap-1.5 shadow-sm" type="button">
 <span>Cari</span>
 <span className="material-symbols-outlined text-sm">arrow_forward</span>
 </button>
 </div>
 {/*  Action CTAs  */}
-<div className="flex flex-wrap items-center justify-center gap-4">
-<a className="inline-flex items-center gap-2 bg-primary-container hover:bg-primary-hover text-on-primary font-label-lg text-label-lg px-7 py-3 rounded-full shadow-md transition-all" href="#">
+<div className="flex flex-col sm:flex-row items-center justify-center gap-2.5 sm:gap-4 w-full sm:w-auto">
+<a className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-primary-container hover:bg-primary-hover text-on-primary font-label-lg text-xs sm:text-label-lg px-6 py-2.5 sm:py-3 rounded-full shadow-md transition-all" href="#layanan">
 <span className="material-symbols-outlined text-lg">assignment</span>
 <span>Layanan Desa</span>
 </a>
-<button onClick={() => setIsComplaintModalOpen(true)} className="inline-flex items-center gap-2 bg-surface-card hover:bg-surface text-text-primary font-label-lg text-label-lg px-7 py-3 rounded-full shadow-md transition-all cursor-pointer" type="button">
+<button onClick={() => setIsComplaintModalOpen(true)} className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-surface-card hover:bg-surface text-text-primary font-label-lg text-xs sm:text-label-lg px-6 py-2.5 sm:py-3 rounded-full shadow-md transition-all cursor-pointer" type="button">
 <span className="material-symbols-outlined text-lg">campaign</span>
 <span>Sampaikan Pengaduan</span></button>
 </div>
@@ -202,7 +202,7 @@ export default function StitchBeranda() {
 </div>
 </section>
 {/*  2. PROFIL & STATISTIK DESA (Bento Grid 12-Col)  */}
-<section className="bg-surface rounded-3xl p-6 md:p-space-2xl">
+<section className="bg-surface rounded-2xl sm:rounded-3xl p-4 sm:p-6 md:p-12">
 <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
 {/*  Left Column (6 cols): 2 Stacked White Cards  */}
 <div className="lg:col-span-6 flex flex-col gap-6">
@@ -213,7 +213,7 @@ export default function StitchBeranda() {
 <span className="material-symbols-outlined text-sm">explore</span>
 <span>Profil Wilayah</span>
 </div>
-<h2 className="font-headline-lg text-headline-lg text-text-primary mb-3">Tentang Desa Gendingan</h2>
+<h2 className="font-headline-lg text-2xl sm:text-headline-lg text-text-primary mb-2 sm:mb-3">Tentang Desa Gendingan</h2>
 <p className="font-body-md text-body-md text-text-secondary leading-relaxed">
                 Desa Gendingan terletak strategis di Kecamatan Kedungwaru, Kabupaten Tulungagung. Dikenal dengan karakter masyarakat yang agamis, guyub rukun, dan berdaya saing tinggi, Pemerintah Desa berkomitmen mewujudkan tata kelola desa yang modern, terbuka, serta berorientasi pada peningkatan kesejahteraan warga dan keterbukaan informasi publik.
               </p>
@@ -309,16 +309,14 @@ export default function StitchBeranda() {
 </div>
 </div>
 {/*  Right Column (6 cols): Full Google Maps Embed  */}
-<div className="lg:col-span-6 bg-surface-card rounded-2xl overflow-hidden shadow-sm border border-border h-full min-h-[500px] relative">
-  <div className="w-full flex-1 min-h-[440px] bg-gray-100 relative">
-    <iframe
-      title="Peta Resmi Desa Gendingan Google Maps"
-      src="https://maps.google.com/maps?q=Kantor+Desa+Gendingan,+Kedungwaru,+Tulungagung&z=15&output=embed"
-      className="w-full h-full min-h-[440px] border-0"
-      loading="lazy"
-      allowFullScreen
-    />
-  </div>
+<div className="lg:col-span-6 bg-surface-card rounded-2xl overflow-hidden shadow-sm border border-border h-full min-h-[340px] sm:min-h-[480px] relative">
+  <iframe
+    title="Peta Resmi Desa Gendingan Google Maps"
+    src="https://maps.google.com/maps?q=Kantor+Desa+Gendingan,+Kedungwaru,+Tulungagung&z=15&output=embed"
+    className="w-full h-full min-h-[340px] sm:min-h-[480px] border-0"
+    loading="lazy"
+    allowFullScreen
+  />
 </div>
 </div>
 </section>
@@ -330,7 +328,7 @@ export default function StitchBeranda() {
 <span className="material-symbols-outlined text-sm">newspaper</span>
 <span>Warta Gendingan</span>
 </div>
-<h2 className="font-headline-lg text-headline-lg text-text-primary">Berita &amp; Kabar Desa</h2>
+<h2 className="font-headline-lg text-2xl sm:text-headline-lg text-text-primary">Berita &amp; Kabar Desa</h2>
 <p className="font-body-md text-body-md text-text-secondary mt-1">
             Ikuti perkembangan informasi terkini, agenda pemerintahan, dan pengumuman resmi Desa Gendingan.
           </p>
@@ -431,15 +429,15 @@ export default function StitchBeranda() {
 </div>
 </section>
 {/*  4. PROGRAM & PEMBANGUNAN UNGGULAN 2026 (Full-Width Featured Banner)  */}
-<section className="relative isolate w-full min-h-[600px] md:min-h-[680px] rounded-3xl overflow-hidden flex items-end p-6 md:p-12 shadow-xl">
+<section className="relative isolate w-full min-h-[480px] sm:min-h-[580px] md:min-h-[660px] rounded-2xl sm:rounded-3xl overflow-hidden flex items-end p-4 sm:p-6 md:p-12 shadow-xl">
 <div className="absolute inset-0 w-full h-full bg-cover bg-center -z-20" data-alt="Modern concrete rural agricultural irrigation canal running through vibrant rice fields in Tulungagung Java with distant solar-powered water monitoring station, warm sunset light reflecting in water channels, peaceful and progressive rural atmosphere" style={{"backgroundImage":"url('https://lh3.googleusercontent.com/aida-public/AB6AXuDCAotC2_BAFmAPBV6ZXw71x0AG1ExVtQc2-kkU5d3zqyJiCtMloMh16imwELRR8R2O13BPQ8AilyxFIKiSN2GkLAy9KOP8-YARuTysUX5wvpuuJFFXc2cf8I6hp8FlQFl15giQiZVCfkyZthkgHy8nUYIEfDcdUJFxp09Vb-0uVFC6MCTA9NuSeRm1Kbz6_FoQ16sR8SkDS50XLvUTYjaQJbf8UuEp1mfWqTpPIXY')"}}>
 </div>
 <div className="absolute inset-0 bg-gradient-to-t from-surface-dark/95 via-surface-dark/30 to-transparent -z-10"></div>
 {/*  Floating Glass Card Overlay  */}
 <div className="w-full flex flex-col md:flex-row md:items-end justify-between gap-6">
-<div className="bg-surface-card/95 backdrop-blur-md rounded-2xl p-6 max-w-xl shadow-xl">
+<div className="bg-surface-card/95 backdrop-blur-md rounded-2xl p-4 sm:p-6 max-w-xl shadow-xl w-full">
 <span className="font-label-sm text-label-sm text-primary uppercase font-bold tracking-wider">Program Unggulan 2026</span>
-<h2 className="font-headline-lg text-headline-lg text-text-primary mt-1 mb-2">
+<h2 className="font-headline-lg text-lg sm:text-2xl md:text-headline-lg text-text-primary mt-1 mb-2">
             Transformasi Layanan Digital &amp; Transparansi APBDes Mandiri
           </h2>
 <p className="font-body-sm text-body-sm text-text-secondary leading-relaxed mb-4">
@@ -474,7 +472,7 @@ export default function StitchBeranda() {
 <span className="material-symbols-outlined text-sm">stars</span>
 <span>Potensi Unggulan</span>
 </div>
-<h2 className="font-headline-lg text-headline-lg text-text-primary">Kekayaan &amp; Potensi Desa Gendingan</h2>
+<h2 className="font-headline-lg text-2xl sm:text-headline-lg text-text-primary">Kekayaan &amp; Potensi Desa Gendingan</h2>
 <p className="font-body-md text-body-md text-text-secondary mt-2">
           Mengenal lebih dekat kekayaan ekonomi kreatif, ketahanan pangan, seni budaya, dan kelembagaan ekonomi kerakyatan kami.
         </p>
@@ -615,7 +613,7 @@ export default function StitchBeranda() {
 <span className="material-symbols-outlined text-sm">event_upcoming</span>
 <span>Jadwal Kegiatan</span>
 </div>
-<h2 className="font-headline-lg text-headline-lg text-text-primary">Agenda &amp; Kegiatan Desa</h2>
+<h2 className="font-headline-lg text-2xl sm:text-headline-lg text-text-primary">Agenda &amp; Kegiatan Desa</h2>
 <p className="font-body-md text-body-md text-text-secondary mt-1">
           Jadwal musyawarah, pelayanan kesehatan masyarakat, serta agenda kemasyarakatan terdekat.
         </p>
@@ -624,7 +622,7 @@ export default function StitchBeranda() {
 {/*  Agenda 1  */}
 <div className="bg-surface-card rounded-2xl p-4 md:p-space-lg shadow-sm flex flex-col md:flex-row items-center justify-between gap-6">
 {/*  Left Thumbnail  */}
-<div className="w-full md:w-36 h-36 rounded-xl overflow-hidden shrink-0 relative">
+<div className="w-full md:w-36 h-44 md:h-36 rounded-xl overflow-hidden shrink-0 relative">
 <img className="w-full h-full object-cover" data-alt="Village health post posyandu nurse gently examining elderly resident blood pressure in warm clean village clinic, caring community health setting in Indonesia" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_1K6qVIhNtk8ZEUARLGsmWmnyayftliEeYm6TwcrwI1jxOQ1PodxU5vA4R4rhsY8_saNqMEQFwLTdThuerhtuSdQgLHfdo0Fbk6gyyX5x1uy3tUlTU6GcfFNE_RMEz2YqKF4LkEwxOTmKUPnjuBH5wWmpDBbKb15AWJ6G_tJtnM3NDDvnNvUzCjLPr7cnW0k7kDv9CqhO507mozMwj5VwKKp9kKdFGAijaXrj60U" />
 <span className="absolute top-2 left-2 bg-primary-container text-on-primary text-xs font-semibold px-2.5 py-0.5 rounded-full shadow-sm">
               Pelayanan
@@ -638,7 +636,7 @@ export default function StitchBeranda() {
 <p className="font-body-sm text-body-sm text-text-secondary">
               Pemeriksaan gula darah, tensi, dan pemberian vitamin berkala untuk warga lanjut usia di lingkungan Dusun Krajan.
             </p>
-<div className="grid grid-cols-2 sm:grid-cols-4 gap-2 pt-1">
+<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-1.5 sm:gap-2 pt-1">
 <div className="flex items-center gap-1 text-text-secondary font-body-sm text-body-sm">
 <span className="material-symbols-outlined text-primary text-sm">calendar_month</span>
 <span>15 Nov 2026</span>
@@ -658,7 +656,7 @@ export default function StitchBeranda() {
 </div>
 </div>
 {/*  Right Countdown  */}
-<div className="w-full md:w-auto shrink-0 flex flex-col items-center md:items-end gap-2">
+<div className="w-full md:w-auto shrink-0 flex flex-col items-center md:items-end gap-2 pt-3 md:pt-0 border-t md:border-t-0 border-border/40">
 <span className="font-label-sm text-label-sm text-text-secondary font-medium">Hitung Mundur Pelaksanaan</span>
 <div className="flex items-center gap-2">
 <div className="bg-secondary-container px-3 py-1.5 rounded-xl text-center min-w-[54px]">
@@ -684,7 +682,7 @@ export default function StitchBeranda() {
 {/*  Agenda 2  */}
 <div className="bg-surface-card rounded-2xl p-4 md:p-space-lg shadow-sm flex flex-col md:flex-row items-center justify-between gap-6">
 {/*  Left Thumbnail  */}
-<div className="w-full md:w-36 h-36 rounded-xl overflow-hidden shrink-0 relative">
+<div className="w-full md:w-36 h-44 md:h-36 rounded-xl overflow-hidden shrink-0 relative">
 <img className="w-full h-full object-cover" data-alt="Village consultative forum meeting in Tulungagung pendopo, village leaders with budget transparency banners presented on screen, civic participation in East Java" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCA-XGyvEhf3jR-A7auP7PBCSy0EkvpT5uzQTJ-zlml4c9aWobKQ17cUxI6Nq1GlOAfU-EkBKJJxTf6kyRFnPiou1OIc-Rz-vxF4cJUH9-B-MQJtsWLOmmjzI8fSBd7qKWiZfDAGAWVux-WqdVBvLHgU1Qw1_JbS0zSLym2dWSeg-mJDnnEDTSUqp9ujMPtYwcGsYVZCTOrKM4SkhVbh8HlUdqST-UpONPQyzzcHcc" />
 <span className="absolute top-2 left-2 bg-primary-container text-on-primary text-xs font-semibold px-2.5 py-0.5 rounded-full shadow-sm">
               Musyawarah
@@ -698,7 +696,7 @@ export default function StitchBeranda() {
 <p className="font-body-sm text-body-sm text-text-secondary">
               Pemaparan terbuka realisasi penggunaan APBDes triwulan akhir dan penyerapan usulan pembangunan dari perwakilan dusun.
             </p>
-<div className="grid grid-cols-2 sm:grid-cols-4 gap-2 pt-1">
+<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-1.5 sm:gap-2 pt-1">
 <div className="flex items-center gap-1 text-text-secondary font-body-sm text-body-sm">
 <span className="material-symbols-outlined text-primary text-sm">calendar_month</span>
 <span>22 Nov 2026</span>
@@ -718,7 +716,7 @@ export default function StitchBeranda() {
 </div>
 </div>
 {/*  Right Countdown  */}
-<div className="w-full md:w-auto shrink-0 flex flex-col items-center md:items-end gap-2">
+<div className="w-full md:w-auto shrink-0 flex flex-col items-center md:items-end gap-2 pt-3 md:pt-0 border-t md:border-t-0 border-border/40">
 <span className="font-label-sm text-label-sm text-text-secondary font-medium">Hitung Mundur Pelaksanaan</span>
 <div className="flex items-center gap-2">
 <div className="bg-secondary-container px-3 py-1.5 rounded-xl text-center min-w-[54px]">
@@ -744,7 +742,7 @@ export default function StitchBeranda() {
 {/*  Agenda 3  */}
 <div className="bg-surface-card rounded-2xl p-4 md:p-space-lg shadow-sm flex flex-col md:flex-row items-center justify-between gap-6">
 {/*  Left Thumbnail  */}
-<div className="w-full md:w-36 h-36 rounded-xl overflow-hidden shrink-0 relative">
+<div className="w-full md:w-36 h-44 md:h-36 rounded-xl overflow-hidden shrink-0 relative">
 <img className="w-full h-full object-cover" data-alt="Vibrant community bazaar market on village field in Java, decorated stalls selling local fresh produce and snacks, Indonesian families enjoying morning sunshine" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBej8h5F2vmIrqIYg6Qm39q9mZAMm36-k0BnyTFHxzSTrGuLT95Dh6HUInjhaSN8tfCcN8ynBALuj1Ns8VzaXSocthnzNWrPKRgSoH8JVk3C-Ew_fr0CRmUOW3Hf91e4_yxLLwm0-z_s4bWn-ytBuJMjUFZGaF9SnxCE2oatUmN0kmw0NgHqeeG6IYdrvu7HNyIjOKcziODjprUpEZO4qIgIuPZ6hG-MfUgQHfkSiQ" />
 <span className="absolute top-2 left-2 bg-primary-container text-on-primary text-xs font-semibold px-2.5 py-0.5 rounded-full shadow-sm">
               Pemberdayaan
@@ -758,7 +756,7 @@ export default function StitchBeranda() {
 <p className="font-body-sm text-body-sm text-text-secondary">
               Pameran produk unggulan warga desa serta penyediaan sembako bersubsidi bekerja sama dengan BUMDes dan Dinas Koperasi.
             </p>
-<div className="grid grid-cols-2 sm:grid-cols-4 gap-2 pt-1">
+<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-1.5 sm:gap-2 pt-1">
 <div className="flex items-center gap-1 text-text-secondary font-body-sm text-body-sm">
 <span className="material-symbols-outlined text-primary text-sm">calendar_month</span>
 <span>29 Nov 2026</span>
@@ -778,7 +776,7 @@ export default function StitchBeranda() {
 </div>
 </div>
 {/*  Right Countdown  */}
-<div className="w-full md:w-auto shrink-0 flex flex-col items-center md:items-end gap-2">
+<div className="w-full md:w-auto shrink-0 flex flex-col items-center md:items-end gap-2 pt-3 md:pt-0 border-t md:border-t-0 border-border/40">
 <span className="font-label-sm text-label-sm text-text-secondary font-medium">Hitung Mundur Pelaksanaan</span>
 <div className="flex items-center gap-2">
 <div className="bg-secondary-container px-3 py-1.5 rounded-xl text-center min-w-[54px]">
@@ -816,7 +814,7 @@ export default function StitchBeranda() {
 <span className="material-symbols-outlined text-sm">photo_library</span>
 <span>Dokumentasi Visual</span>
 </div>
-<h2 className="font-headline-lg text-headline-lg text-text-primary">Galeri Dokumentasi Desa</h2>
+<h2 className="font-headline-lg text-2xl sm:text-headline-lg text-text-primary">Galeri Dokumentasi Desa</h2>
 <p className="font-body-md text-body-md text-text-secondary mt-1">
           Potret kebersamaan gotong royong, pembangunan sarana publik, dan dinamika hangat masyarakat Desa Gendingan.
         </p>
@@ -846,17 +844,17 @@ export default function StitchBeranda() {
 <div className="w-14 h-14 rounded-full bg-primary-container/20 text-primary-fixed flex items-center justify-center mb-4">
 <span className="material-symbols-outlined text-3xl">record_voice_over</span>
 </div>
-<h2 className="font-headline-lg text-headline-lg text-on-primary mb-3">
+<h2 className="font-headline-lg text-2xl sm:text-3xl md:text-headline-lg text-on-primary mb-2 sm:mb-3">
           Sampaikan Pengaduan atau Aspirasi Anda
         </h2>
-<p className="font-body-md text-body-md text-on-primary/90 max-w-xl mx-auto mb-8 leading-relaxed">
+<p className="font-body-md text-xs sm:text-body-md text-on-primary/90 max-w-xl mx-auto mb-6 sm:mb-8 leading-relaxed">
           Partisipasi aktif Anda adalah kunci kemajuan Desa Gendingan. Sampaikan usulan pembangunan, pengaduan fasilitas umum, atau kendala layanan secara transparan dan terpantau.
         </p>
-<div className="flex flex-wrap items-center justify-center gap-4">
-<button onClick={() => setIsComplaintModalOpen(true)} className="inline-flex items-center gap-2 bg-primary-container hover:bg-primary-hover text-on-primary font-label-lg text-label-lg px-8 py-3.5 rounded-full shadow-lg transition-all cursor-pointer" type="button">
+<div className="flex flex-col sm:flex-row items-center justify-center gap-2.5 sm:gap-4 w-full sm:w-auto">
+<button onClick={() => setIsComplaintModalOpen(true)} className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-primary-container hover:bg-primary-hover text-on-primary font-label-lg text-xs sm:text-label-lg px-6 sm:px-8 py-3 rounded-full shadow-lg transition-all cursor-pointer" type="button">
 <span className="material-symbols-outlined text-lg">edit_note</span>
 <span>Buat Laporan Pengaduan</span></button>
-<a className="inline-flex items-center gap-2 bg-surface-card/20 hover:bg-surface-card/30 backdrop-blur-md text-on-primary font-label-lg text-label-lg px-7 py-3.5 rounded-full shadow transition-all" href="#">
+<a className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-surface-card/20 hover:bg-surface-card/30 backdrop-blur-md text-on-primary font-label-lg text-xs sm:text-label-lg px-6 sm:px-7 py-3 rounded-full shadow transition-all" href="#">
 <span className="material-symbols-outlined text-lg">track_changes</span>
 <span>Lacak Status Laporan</span>
 </a>

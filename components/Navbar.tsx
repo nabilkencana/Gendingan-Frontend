@@ -69,7 +69,7 @@ export default function Navbar() {
 
           {/* Desktop Radix NavigationMenu (Silky Smooth Tab & Viewport Animation) */}
           <nav className="hidden xl:flex items-center justify-center">
-            <NavigationMenu viewport={true}>
+            <NavigationMenu viewport={false}>
               <NavigationMenuList className="gap-1">
                 {/* 1. Beranda */}
                 <NavigationMenuItem>
@@ -316,11 +316,11 @@ export default function Navbar() {
         {/* Upgraded Mobile Slide-Over Drawer */}
         {isMobileMenuOpen && (
           <div
-            className="fixed inset-0 z-50 bg-surface-dark/60 backdrop-blur-sm xl:hidden animate-fadeIn"
+            className="fixed inset-0 h-[100dvh] w-screen z-50 bg-surface-dark/60 backdrop-blur-sm xl:hidden animate-fadeIn"
             onClick={() => setIsMobileMenuOpen(false)}
           >
             <div
-              className="fixed inset-y-0 right-0 w-80 max-w-[88vw] h-full bg-surface-card shadow-2xl flex flex-col justify-between border-l border-border animate-slideLeft"
+              className="fixed inset-y-0 right-0 w-80 max-w-[88vw] h-[100dvh] bg-surface-card shadow-2xl flex flex-col justify-between border-l border-border animate-slideLeft"
               onClick={(e) => e.stopPropagation()}
             >
               {/* Drawer Header */}

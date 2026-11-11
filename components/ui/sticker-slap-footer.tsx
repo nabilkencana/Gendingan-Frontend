@@ -338,6 +338,7 @@ const CSS =
   ".ssf-pop b{font-size:11px;font-weight:600;opacity:.6;text-transform:lowercase}" +
   ".ssf-pop strong{font-weight:800;letter-spacing:-.01em}" +
   "@container (max-width: 760px){.ssf-cols{grid-template-columns:minmax(0,1fr)}.ssf-top{padding-bottom:24px}.ssf-stage{width:min(165%,calc(var(--ssf-wmh) * var(--ssf-ar)));max-width:none;margin-left:-6%}}" +
+  "@media (max-width: 640px){.ssf{padding:0 4px 6px}.ssf-top{display:flex;justify-content:space-between;align-items:center;padding:14px 8px 18px;gap:8px}.ssf-nav{display:none}.ssf-logo{justify-content:flex-start}.ssf-logo img{height:32px}.ssf-cols{grid-template-columns:minmax(0,1fr)!important;gap:28px!important;padding:24px 16px 20px!important}.ssf-big{font-size:19px!important}.ssf-stage{width:100%!important;max-width:100%!important;margin-left:0!important;padding:0 6px!important}.ssf-credits{right:8px;bottom:8px}.ssf-pill{font-size:11px;padding:.25em .65em}}" +
   "@keyframes ssf-rewrite{0%{stroke-dashoffset:var(--l,120px)}100%{stroke-dashoffset:0}}" +
   "@keyframes ssf-popin{from{opacity:0;transform:translateY(10px) scale(.7) rotate(4deg)}}" +
   // the storyboard: everything above is the finished state; motion only adds the way in

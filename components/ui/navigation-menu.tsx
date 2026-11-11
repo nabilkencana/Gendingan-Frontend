@@ -10,6 +10,8 @@ function NavigationMenu({
   className,
   children,
   viewport = true,
+  delayDuration = 100,
+  skipDelayDuration = 300,
   ...props
 }: React.ComponentProps<typeof NavigationMenuPrimitive.Root> & {
   viewport?: boolean;
@@ -18,6 +20,8 @@ function NavigationMenu({
     <NavigationMenuPrimitive.Root
       data-slot="navigation-menu"
       data-viewport={viewport}
+      delayDuration={delayDuration}
+      skipDelayDuration={skipDelayDuration}
       className={cn('group/navigation-menu relative flex max-w-max flex-1 items-center justify-center', className)}
       {...props}
     >
@@ -44,7 +48,7 @@ function NavigationMenuItem({ className, ...props }: React.ComponentProps<typeof
 }
 
 const navigationMenuTriggerStyle = cva(
-  'cursor-pointer group inline-flex h-9 w-max items-center justify-center rounded-full bg-transparent px-3.5 py-2 text-sm font-medium hover:bg-secondary/70 hover:text-primary focus:bg-secondary/70 focus:text-primary disabled:pointer-events-none disabled:opacity-50 data-[active=true]:bg-secondary/70 data-[state=open]:bg-secondary/80 data-[state=open]:text-primary transition-all duration-200 ease-out',
+  'cursor-pointer group inline-flex h-9 w-max items-center justify-center rounded-full bg-transparent px-3.5 py-2 text-sm font-medium text-text-primary hover:bg-[#F4F6F4] hover:text-primary focus:bg-[#F4F6F4] focus:text-primary disabled:pointer-events-none disabled:opacity-50 data-[active=true]:bg-[#F4F6F4] data-[state=open]:bg-[#F4F6F4] data-[state=open]:text-primary transition-all duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] outline-none focus:outline-none focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/20',
 );
 
 function NavigationMenuTrigger({
@@ -60,7 +64,7 @@ function NavigationMenuTrigger({
     >
       {children}{' '}
       <ChevronDownIcon
-        className="relative top-[1px] ms-1 size-3.5 opacity-60 transition duration-300 group-data-[state=open]:rotate-180"
+        className="relative top-[1px] ms-1 size-3.5 opacity-60 transition-transform duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] group-data-[state=open]:rotate-180"
         aria-hidden="true"
       />
     </NavigationMenuPrimitive.Trigger>
@@ -72,13 +76,13 @@ function NavigationMenuContent({ className, ...props }: React.ComponentProps<typ
     <NavigationMenuPrimitive.Content
       data-slot="navigation-menu-content"
       className={cn(
-        'top-0 left-0 w-full md:absolute md:w-auto',
-        'data-[motion=from-start]:animate-enterFromLeft',
-        'data-[motion=from-end]:animate-enterFromRight',
-        'data-[motion=to-start]:animate-exitToLeft',
-        'data-[motion=to-end]:animate-exitToRight',
+        'top-full left-0 w-full md:absolute md:w-auto z-50 origin-top-left',
+        'before:absolute before:-top-3 before:left-0 before:right-0 before:h-3 before:content-[\'\']',
         'transition-all duration-300 ease-[cubic-bezier(0.16,1,0.3,1)]',
-        'group-data-[viewport=false]/navigation-menu:bg-surface-card group-data-[viewport=false]/navigation-menu:text-text-primary group-data-[viewport=false]/navigation-menu:data-[state=open]:animate-scaleIn group-data-[viewport=false]/navigation-menu:data-[state=closed]:animate-scaleOut group-data-[viewport=false]/navigation-menu:top-full group-data-[viewport=false]/navigation-menu:mt-2 group-data-[viewport=false]/navigation-menu:overflow-hidden group-data-[viewport=false]/navigation-menu:rounded-2xl group-data-[viewport=false]/navigation-menu:border group-data-[viewport=false]/navigation-menu:border-border group-data-[viewport=false]/navigation-menu:shadow-xl',
+        'group-data-[viewport=false]/navigation-menu:bg-surface-card group-data-[viewport=false]/navigation-menu:text-text-primary',
+        'group-data-[viewport=false]/navigation-menu:data-[state=open]:animate-scaleIn group-data-[viewport=false]/navigation-menu:data-[state=closed]:animate-scaleOut',
+        'group-data-[viewport=false]/navigation-menu:top-full group-data-[viewport=false]/navigation-menu:left-0 group-data-[viewport=false]/navigation-menu:mt-2',
+        'group-data-[viewport=false]/navigation-menu:rounded-2xl group-data-[viewport=false]/navigation-menu:border group-data-[viewport=false]/navigation-menu:border-border group-data-[viewport=false]/navigation-menu:shadow-xl',
         className,
       )}
       {...props}
